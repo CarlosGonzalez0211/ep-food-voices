@@ -9,20 +9,39 @@ export default function Page({ page, error }) {
   // Show fallback content if no Builder.io API key or content
   if (error || !process.env.NEXT_PUBLIC_BUILDER_API_KEY) {
     return (
-      <div style={{ padding: '2rem', textAlign: 'center', fontFamily: 'system-ui' }}>
-        <h1>Welcome to Builder.io App</h1>
-        <p>
-          {!process.env.NEXT_PUBLIC_BUILDER_API_KEY
-            ? 'Please configure your Builder.io API key to load content.'
-            : 'Content is being loaded...'}
-        </p>
-        <div style={{ marginTop: '2rem' }}>
-          <p>To configure Builder.io:</p>
-          <ol style={{ textAlign: 'left', display: 'inline-block' }}>
-            <li>Get your API key from <a href="https://builder.io" target="_blank">builder.io</a></li>
-            <li>Set NEXT_PUBLIC_BUILDER_API_KEY environment variable</li>
-            <li>Restart the development server</li>
-          </ol>
+      <div style={{
+        pointerEvents: "auto",
+        color: "rgb(237, 237, 237)",
+        backgroundColor: "rgb(10, 10, 10)",
+        font: "400 16px Arial, Helvetica, sans-serif"
+      }}>
+        <div style={{
+          position: "relative",
+          marginTop: "20px",
+          height: "auto"
+        }}>
+          Home Page
+          <br />
+          <br />
+        </div>
+        <div style={{
+          fontWeight: "400",
+          pointerEvents: "auto"
+        }}>
+          <div style={{
+            fontWeight: "400",
+            pointerEvents: "auto"
+          }}>
+            <div style={{
+              fontWeight: "400",
+              pointerEvents: "auto"
+            }}>
+              <div style={{
+                fontWeight: "400",
+                pointerEvents: "auto"
+              }} />
+            </div>
+          </div>
         </div>
       </div>
     );
