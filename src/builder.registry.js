@@ -18,3 +18,11 @@ Builder.registerComponent(
     inputs: [{ name: "initialCount", type: "number" }]
   }
 );
+
+Builder.registerComponent(
+  dynamic(() => import("./components/MyComponent")),
+  {
+    name: "MyComponent",
+    inputs: []
+  }
+);
