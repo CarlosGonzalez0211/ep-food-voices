@@ -1,4 +1,4 @@
-import { RawImg } from "@components";
+import { RawImg } from ".";
 
 export default function MyComponent(props) {
   return (
