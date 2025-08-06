@@ -1,0 +1,14 @@
+/* Header.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  color: white;
+}
