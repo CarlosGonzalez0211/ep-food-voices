@@ -13,7 +13,7 @@ const Header = () => {
 
       {/* Navigation links */}
       <nav className={styles.links}>
-        <Link href="/">Home</Link>
+        <Link href="/">Homepage</Link>
         <Link href="/about">About</Link>
         <Link href="/services">Services</Link>
         <Link href="/portfolio">Portfolio</Link>
