@@ -1,9 +1,11 @@
 /* Header css */
 .navbar {
   display: flex;
+  position: relative;   /* was static */
+  z-index: 10;          /* keep it on top of the hero */
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: white; /* ensures hero doesn't show through */
   padding: 1rem;
 }
 
@@ -15,8 +17,8 @@
 
 /* Logo styles */
 .logo {
-  height: 30px; /* You can adjust this */
-  width: auto;  /* Maintain aspect ratio */
+  height: 30px;
+  width: auto;
   object-fit: contain;
 }
 
