@@ -9,8 +9,8 @@ const Footer = () => {
         <div className={styles.footerLeft}>
             <p >
                 Contact <br/>
-                Meredith E. Abarca. Ph.D <br/>
-                Founder, Editor, Curator of EPFV <br/>
+                <br/>
+                Carlos Gonzalez <br/>
                 Professor of Food Studies and Literature <br/>
                 Department of English <br/>
                 The Univeristy of Texas at El Paso <br/>
