@@ -13,13 +13,13 @@ const Header = () => {
 
       {/* Navigation links */}
       <nav className={styles.links}>
-        <Link href="/">Homepage</Link>
-        <Link href="/about">askjdhaskdjfhkasjdhf</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/portfolio">Portfolio</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/contact">Contact</Link>
-        <Link href="/faq">FAQ</Link>
+        <Link href="/">Home</Link>
+        <Link href="/about">Stories</Link>
+        <Link href="/services">Recipes</Link>
+        <Link href="/portfolio">Podcasts</Link>
+        <Link href="/blog">Resources</Link>
+        <Link href="/contact">About</Link>
+        <Link href="/faq">Epicureans</Link>
       </nav>
     </header>
   );

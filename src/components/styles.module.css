@@ -1,11 +1,11 @@
 /* Header css */
 .navbar {
   display: flex;
-  position: relative;   /* was static */
-  z-index: 10;          /* keep it on top of the hero */
+  position: relative;
+  z-index: 10;                 /* keep header above hero */
   justify-content: space-between;
   align-items: center;
-  background-color: white; /* ensures hero doesn't show through */
+  background-color: white;     /* no see-through */
   padding: 1rem;
 }
 
@@ -22,18 +22,22 @@
   object-fit: contain;
 }
 
+/* Footer css */
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: black;     /* or white if you prefer */
+  color: white;                /* ensure readable text */
   padding: 2rem;
   flex-wrap: wrap;
+
+  position: relative;          /* create stacking context */
+  z-index: 5;                  /* sit above hero if they touch */
 }
 
 .footerLeft {
   flex: 1;
-  color: white;
   font-size: 14px;
   line-height: 1.6;
   text-align: center;

@@ -1,168 +1,119 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+/* Full‑bleed hero container */
+.imageContainer {
+  position: relative;           /* required for next/image + fill */
+  width: 100vw;                 /* full width */
+  left: 50%;                    /* prevent parent centering from clipping */
+  right: 50%;
+  margin-left: -50vw;           /* full-bleed trick when inside centered wrappers */
+  margin-right: -50vw;
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+  height: min(90vh, 900px);     /* tall like the mock; adjust as needed */
+  z-index: 0;
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+/* Darken image slightly for readability (optional but nice) */
+.imageContainer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25); /* tweak 0.15–0.35 */
+  pointer-events: none;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+.image { 
+  object-fit: cover; 
 }
 
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+/* Shared overlay text treatment */
+.textOverlayTop,
+.textOverlayMiddle,
+.textOverlayBottom {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35); /* subtle glow for legibility */
+  padding: 0 1rem;
+  width: 100%;
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: auto; /* adjust if you want fixed height */
 }
 
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
+.heroBg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.ctas {
-  display: flex;
-  gap: 16px;
+.heroOverlay {
+  position: absolute;
+  top: 15%;      /* vertical positioning */
+  left: 50%;     /* horizontal positioning */
+  transform: translate(-50%, -50%); /* perfect centering */
+  width: auto;   /* or set a % if you want scaling */
+  max-width: 80%;
 }
 
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
+/* Middle big line */
+.textOverlayMiddle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centered both ways */
+  font-size: clamp(1.8rem, 4.5vw, 6rem);
   font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 1.05;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+/* Bottom two lines */
+.textOverlayBottom {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%); /* only center horizontally */
+  font-size: clamp(1rem, 2.4vw, 2rem);
+  line-height: 1.25;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
+/* ---- "Latest Stories" section ---- */
+.storiesSection {
+  background: #f5f6f7;             /* light gray bg; change to #fff if you prefer */
+  padding: clamp(48px, 8vw, 96px) 24px;
 }
 
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
+.storiesWrap {
+  max-width: 960px;                /* readable line length */
+  margin: 0 auto;
 }
 
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.storiesTitle {
+  text-align: center;
+  color: #1f2937;                  /* gray-800 */
+  font-family: Georgia, "Times New Roman", serif; /* serif heading */
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: clamp(28px, 5vw, 56px);
+  margin: 0 0 clamp(28px, 4vw, 48px);
 }
 
-.footer img {
-  flex-shrink: 0;
+.storiesBody {
+  color: #111827;                  /* gray-900 */
+  font-size: clamp(16px, 1.15vw, 18px);
+  line-height: 1.8;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
+/* nice spacing between paragraphs */
+.storiesBody p + p {
+  margin-top: 16px;
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+/* strong stays bold but not too heavy */
+.storiesBody strong {
+  font-weight: 700;
 }
