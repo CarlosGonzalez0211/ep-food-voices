@@ -70,7 +70,30 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </section>           
+          </section>
+
+          <section className={styles.imageTextSection}>
+            <div className={styles.imageTextContainer}>
+              <div className={styles.imageTextContent}>
+                <div className={styles.imageTextColumns}>
+                  <div className={styles.imageColumn}>
+                    <img
+                      loading="lazy"
+                      srcSet="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
+                      alt=""
+                      className={styles.responsiveImage}
+                    />
+                  </div>
+                  <div className={styles.textColumn}>
+                    <div className={styles.textContent}>
+                      Monsato is bad.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
 
