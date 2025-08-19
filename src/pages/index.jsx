@@ -63,7 +63,7 @@ export default function Home() {
                 <p>
                   <strong>The foods that define</strong> a city's story lived through food speaks to its histories,
                   cultures, ecological environments, politics and economics. Recipes are always more than
-                  “how to” instructions. Recipes are stories. They reveal how and why we remember certain
+                  "how to" instructions. Recipes are stories. They reveal how and why we remember certain
                   ingredients, techniques, and ways of serving. Food stories archive the flavors and textures of
                   our lived experiences, of the places we have lived, of histories we share with family, friends
                   and strangers. These stories bring to life El Paso's mosaic of flavors.
@@ -88,6 +88,253 @@ export default function Home() {
                   <div className={styles.textColumn}>
                     <div className={styles.textContent}>
                       Monsato is bad.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div
+              style={{
+                display: "flex",
+                alignSelf: "stretch",
+                flexDirection: "column",
+                flexGrow: "1",
+                fontWeight: "400",
+                maxWidth: "1200px",
+                minHeight: "100px",
+                position: "relative",
+                width: "100%",
+                pointerEvents: "auto",
+                margin: "0 auto",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontWeight: "400",
+                  marginTop: "20px",
+                  position: "relative",
+                  pointerEvents: "auto",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    fontWeight: "400",
+                    gap: "20px",
+                    pointerEvents: "auto",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      fontWeight: "400",
+                      width: "50%",
+                      pointerEvents: "auto",
+                    }}
+                  >
+                    <img
+                      loading="lazy"
+                      alt=""
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F594dad2075fd46cfb1b0569525c91cf0"
+                      style={{
+                        display: "block",
+                        aspectRatio: "1 / 1",
+                        fontWeight: "400",
+                        marginTop: "20px",
+                        minHeight: "20px",
+                        minWidth: "20px",
+                        objectFit: "cover",
+                        overflowX: "hidden",
+                        overflowY: "hidden",
+                        width: "100%",
+                        pointerEvents: "auto",
+                      }}
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontWeight: "400",
+                      position: "relative",
+                      pointerEvents: "auto",
+                      marginLeft: "20px",
+                      width: "50%",
+                      paddingTop: "20px",
+                    }}
+                  >
+                    <div>
+                      "Historical recipes humanize the past."
+                    </div>
+                    <div>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div
+              style={{
+                display: "flex",
+                alignSelf: "stretch",
+                flexDirection: "column",
+                flexGrow: "1",
+                fontWeight: "400",
+                maxWidth: "1200px",
+                minHeight: "100px",
+                position: "relative",
+                width: "100%",
+                pointerEvents: "auto",
+                margin: "0 auto",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontWeight: "400",
+                  marginTop: "20px",
+                  position: "relative",
+                  pointerEvents: "auto",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    fontWeight: "400",
+                    gap: "20px",
+                    pointerEvents: "auto",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      fontWeight: "400",
+                      width: "50%",
+                      pointerEvents: "auto",
+                    }}
+                  >
+                    <img
+                      loading="lazy"
+                      alt=""
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2Fba62e9019a3d4b5fa797b6d51999c057"
+                      style={{
+                        display: "block",
+                        aspectRatio: "1 / 1",
+                        fontWeight: "400",
+                        marginTop: "20px",
+                        minHeight: "20px",
+                        minWidth: "20px",
+                        objectFit: "cover",
+                        overflowX: "hidden",
+                        overflowY: "hidden",
+                        width: "100%",
+                        pointerEvents: "auto",
+                      }}
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontWeight: "400",
+                      position: "relative",
+                      pointerEvents: "auto",
+                      marginLeft: "20px",
+                      width: "50%",
+                      paddingTop: "20px",
+                    }}
+                  >
+                    <div>
+                      "creating opportunities while teaching with food"
+                    </div>
+                    <div>
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div
+              style={{
+                display: "flex",
+                alignSelf: "stretch",
+                flexDirection: "column",
+                flexGrow: "1",
+                fontWeight: "400",
+                maxWidth: "1200px",
+                minHeight: "100px",
+                position: "relative",
+                width: "100%",
+                pointerEvents: "auto",
+                margin: "0 auto",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontWeight: "400",
+                  marginTop: "20px",
+                  position: "relative",
+                  pointerEvents: "auto",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    fontWeight: "400",
+                    gap: "20px",
+                    pointerEvents: "auto",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      fontWeight: "400",
+                      width: "50%",
+                      pointerEvents: "auto",
+                    }}
+                  >
+                    <img
+                      loading="lazy"
+                      alt=""
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2Fcbebf84fbf684a94ad0562adbd67a850"
+                      style={{
+                        display: "block",
+                        aspectRatio: "1 / 1",
+                        fontWeight: "400",
+                        marginTop: "20px",
+                        minHeight: "20px",
+                        minWidth: "20px",
+                        objectFit: "cover",
+                        overflowX: "hidden",
+                        overflowY: "hidden",
+                        width: "100%",
+                        pointerEvents: "auto",
+                      }}
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontWeight: "400",
+                      position: "relative",
+                      pointerEvents: "auto",
+                      marginLeft: "20px",
+                      width: "50%",
+                      paddingTop: "20px",
+                    }}
+                  >
+                    <div>"I'm a damn good chef, and I show it."</div>
+                    <div>
+                      <br />
                     </div>
                   </div>
                 </div>
