@@ -93,6 +93,240 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <div
+              style={{
+                display: "flex",
+                alignSelf: "stretch",
+                flexDirection: "column",
+                flexGrow: "1",
+                fontWeight: "400",
+                maxWidth: "1200px",
+                minHeight: "100px",
+                position: "relative",
+                width: "100%",
+                pointerEvents: "auto",
+                margin: "0 auto",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontWeight: "400",
+                  marginTop: "20px",
+                  position: "relative",
+                  pointerEvents: "auto",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    fontWeight: "400",
+                    gap: "20px",
+                    pointerEvents: "auto",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      fontWeight: "400",
+                      width: "50%",
+                      pointerEvents: "auto",
+                    }}
+                  >
+                    <img
+                      loading="lazy"
+                      alt=""
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
+                      style={{
+                        display: "block",
+                        aspectRatio: "1 / 1",
+                        fontWeight: "400",
+                        marginTop: "20px",
+                        minHeight: "20px",
+                        minWidth: "20px",
+                        objectFit: "cover",
+                        overflowX: "hidden",
+                        overflowY: "hidden",
+                        width: "100%",
+                        pointerEvents: "auto",
+                      }}
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontWeight: "400",
+                      position: "relative",
+                      pointerEvents: "auto",
+                      marginLeft: "20px",
+                      width: "50%",
+                      paddingTop: "20px",
+                    }}
+                  >
+                    Monsato is bad.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                alignSelf: "stretch",
+                flexDirection: "column",
+                flexGrow: "1",
+                fontWeight: "400",
+                maxWidth: "1200px",
+                minHeight: "100px",
+                position: "relative",
+                width: "100%",
+                pointerEvents: "auto",
+                margin: "0 auto",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontWeight: "400",
+                  marginTop: "20px",
+                  position: "relative",
+                  pointerEvents: "auto",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    fontWeight: "400",
+                    gap: "20px",
+                    pointerEvents: "auto",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      fontWeight: "400",
+                      width: "50%",
+                      pointerEvents: "auto",
+                    }}
+                  >
+                    <img
+                      loading="lazy"
+                      alt=""
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
+                      style={{
+                        display: "block",
+                        aspectRatio: "1 / 1",
+                        fontWeight: "400",
+                        marginTop: "20px",
+                        minHeight: "20px",
+                        minWidth: "20px",
+                        objectFit: "cover",
+                        overflowX: "hidden",
+                        overflowY: "hidden",
+                        width: "100%",
+                        pointerEvents: "auto",
+                      }}
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontWeight: "400",
+                      position: "relative",
+                      pointerEvents: "auto",
+                      marginLeft: "20px",
+                      width: "50%",
+                      paddingTop: "20px",
+                    }}
+                  >
+                    Monsato is bad.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                alignSelf: "stretch",
+                flexDirection: "column",
+                flexGrow: "1",
+                fontWeight: "400",
+                maxWidth: "1200px",
+                minHeight: "100px",
+                position: "relative",
+                width: "100%",
+                pointerEvents: "auto",
+                margin: "0 auto",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontWeight: "400",
+                  marginTop: "20px",
+                  position: "relative",
+                  pointerEvents: "auto",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    fontWeight: "400",
+                    gap: "20px",
+                    pointerEvents: "auto",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      fontWeight: "400",
+                      width: "50%",
+                      pointerEvents: "auto",
+                    }}
+                  >
+                    <img
+                      loading="lazy"
+                      alt=""
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
+                      style={{
+                        display: "block",
+                        aspectRatio: "1 / 1",
+                        fontWeight: "400",
+                        marginTop: "20px",
+                        minHeight: "20px",
+                        minWidth: "20px",
+                        objectFit: "cover",
+                        overflowX: "hidden",
+                        overflowY: "hidden",
+                        width: "100%",
+                        pointerEvents: "auto",
+                      }}
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontWeight: "400",
+                      position: "relative",
+                      pointerEvents: "auto",
+                      marginLeft: "20px",
+                      width: "50%",
+                      paddingTop: "20px",
+                    }}
+                  >
+                    Monsato is bad.
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </main>
       </div>
