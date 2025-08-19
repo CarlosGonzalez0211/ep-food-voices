@@ -63,7 +63,7 @@ export default function Home() {
                 <p>
                   <strong>The foods that define</strong> a city's story lived through food speaks to its histories,
                   cultures, ecological environments, politics and economics. Recipes are always more than
-                  “how to” instructions. Recipes are stories. They reveal how and why we remember certain
+                  "how to" instructions. Recipes are stories. They reveal how and why we remember certain
                   ingredients, techniques, and ways of serving. Food stories archive the flavors and textures of
                   our lived experiences, of the places we have lived, of histories we share with family, friends
                   and strangers. These stories bring to life El Paso's mosaic of flavors.
@@ -93,7 +93,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
+            
             <div
               style={{
                 display: "flex",
@@ -140,7 +140,7 @@ export default function Home() {
                     <img
                       loading="lazy"
                       alt=""
-                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F594dad2075fd46cfb1b0569525c91cf0"
                       style={{
                         display: "block",
                         aspectRatio: "1 / 1",
@@ -166,12 +166,17 @@ export default function Home() {
                       paddingTop: "20px",
                     }}
                   >
-                    Monsato is bad.
+                    <div>
+                      "Historical recipes humanize the past."
+                    </div>
+                    <div>
+                      <br />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
+            
             <div
               style={{
                 display: "flex",
@@ -218,7 +223,7 @@ export default function Home() {
                     <img
                       loading="lazy"
                       alt=""
-                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2Fba62e9019a3d4b5fa797b6d51999c057"
                       style={{
                         display: "block",
                         aspectRatio: "1 / 1",
@@ -244,12 +249,17 @@ export default function Home() {
                       paddingTop: "20px",
                     }}
                   >
-                    Monsato is bad.
+                    <div>
+                      "creating opportunities while teaching with food"
+                    </div>
+                    <div>
+                      <br />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
+            
             <div
               style={{
                 display: "flex",
@@ -296,7 +306,7 @@ export default function Home() {
                     <img
                       loading="lazy"
                       alt=""
-                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2Fcbebf84fbf684a94ad0562adbd67a850"
                       style={{
                         display: "block",
                         aspectRatio: "1 / 1",
@@ -322,7 +332,10 @@ export default function Home() {
                       paddingTop: "20px",
                     }}
                   >
-                    Monsato is bad.
+                    <div>"I'm a damn good chef, and I show it."</div>
+                    <div>
+                      <br />
+                    </div>
                   </div>
                 </div>
               </div>
