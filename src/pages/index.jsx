@@ -87,7 +87,7 @@ export default function Home() {
                   </div>
                   <div className={styles.textColumn}>
                     <div className={styles.textContent}>
-                      Monsato is bad.
+                      <b>"Monsato is bad."</b>
                     </div>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ export default function Home() {
                     }}
                   >
                     <div>
-                      "Historical recipes humanize the past."
+                      <b>"Historical recipes humanize the past."</b>
                     </div>
                     <div>
                       <br />
@@ -250,7 +250,10 @@ export default function Home() {
                     }}
                   >
                     <div>
-                      "creating opportunities while teaching with food"
+                      <strong>
+                        "creating opportunities while teaching with
+                        food."
+                      </strong>
                     </div>
                     <div>
                       <br />
@@ -332,7 +335,7 @@ export default function Home() {
                       paddingTop: "20px",
                     }}
                   >
-                    <div>"I'm a damn good chef, and I show it."</div>
+                    <div><b>"I'm a damn good chef, and I show it."</b></div>
                     <div>
                       <br />
                     </div>
