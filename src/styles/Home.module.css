@@ -42,12 +42,14 @@
   position: relative;
   width: 100%;
   height: auto; /* adjust if you want fixed height */
+  align-items: center;
 }
 
 .heroBg {
   width: 100%;
   height: auto;
   display: block;
+  align-items: center;
 }
 
 .heroOverlay {
@@ -206,4 +208,58 @@
   position: relative;
   margin-top: 20px;
   height: auto;
+}
+
+
+
+/*ABOUT SECTION CSS */
+
+.teamCard {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.cardImageWrapper {
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.cardImage {
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.cardText {
+  max-width: 700px;
+}
+
+.cardText h4 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cardText h4 span {
+  display: block;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.2rem;
+}
+
+.cardText p {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+}
+
+.cardText a {
+  color: #0070f3;
+  text-decoration: underline;
 }
