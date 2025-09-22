@@ -180,7 +180,54 @@ export default function About() {
                     </p>
                   </div>
                 </article>
-                
+
+                <article className={styles.teamCard}>
+                  <div className={styles.cardImageWrapper}>
+                    <Image
+                      src="/about_images/food_logo.png"
+                      alt="Carolina Valdez"
+                      width={200}
+                      height={200}
+                      className={styles.cardImage}
+                    />
+                  </div>
+                  <div className={styles.cardText}>
+                    <h4>Carolina Valdez<br/><span>Graphic Designer (for EPFV "Logo")</span></h4>
+                    <p>
+                      This logo was created by Carrolina Valdez, a UTEP student sharpening her graphic skills at UTEP’s Creative Studios. The logo takes its inspiration from Chicano artist Rolando Briseño’s Tablescapes.
+                    </p>
+                  </div>
+                </article>
+
+                <article className={styles.teamCard}>
+                  <div className={styles.cardImageWrapper}>
+                    <Image
+                      src="/about_images/marcos.jpg"
+                      alt="Carlos Gonzalez"
+                      width={200}
+                      height={200}
+                      className={styles.cardImage}
+                    />
+                  </div>
+                  <div className={styles.cardText}>
+                    <h4>Carlos Gonzalez<br/><span>Web Developer</span></h4>
+                    <p>
+                      I am a rising-senior undergraduate student majoring in Computer Science at the Univeristy of Texas at El Paso. I have always been captivated and passionate about software development, and working on this project has allowed for me to grow my development skills while expanding my culinary education along the way
+                    </p>
+                  </div>
+                </article>
+
+                <section>
+                  <strong>Special Thanks:</strong>
+                  <p>Steve Varela and UTEP's Creatuve Studios</p>
+                  <p>Liduvina Velez</p>
+                  <p>Lucy Fischer-West</p>
+                  <p>Skip Clark</p>
+                  <p>Julia and Sergio Lopez</p>
+                  <p>To read about how EPFV provides a model to achieve UTEP’s 2030 Strategic Plan, please visit<a href="/strategic_plan"> EPFV-UTEP’S 2030 STRATEGIC PLAN</a></p>
+
+                </section>
+
               </div>
             </div>
           </section>
