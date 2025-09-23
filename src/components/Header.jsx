@@ -14,12 +14,12 @@ const Header = () => {
       {/* Navigation links */}
       <nav className={styles.links}>
         <Link href="/">Home</Link>
-        <Link href="/about">Stories</Link>
-        <Link href="/services">Recipes</Link>
-        <Link href="/portfolio">Podcasts</Link>
-        <Link href="/blog">Resources</Link>
-        <Link href="/contact">About</Link>
-        <Link href="/faq">Epicureans</Link>
+        <Link href="/stories">Stories</Link>
+        <Link href="/recipes">Recipes</Link>
+        <Link href="/podcasts">Podcasts</Link>
+        <Link href="/resources">Resources</Link>
+        <Link href="/about">About</Link>
+        <Link href="/epicureans">Epicureans</Link>
       </nav>
     </header>
   );

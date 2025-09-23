@@ -1,0 +1,41 @@
+{
+  "slug": "",  
+  "title": "",  
+  "quote": "",  
+  "author": "",  
+  "description": "",
+  "photo": "",  
+  "photoCourtesy": "",  
+
+  "videos": [
+    {
+      "title": "",
+      "embedUrl": ""
+    }
+    
+  ],
+
+  "recipes": [
+    {
+      "title": "",
+      "author": "",
+      "type": "",
+      "serves": "",
+      "prepTime": "",
+      "cookTime": "",
+      "image": ""
+    }
+    
+  ],
+
+  "resources": [
+    {
+      "title": "Scholarly Reflection: “Cooking to Experience the World”",
+      "link": null
+    },
+    {
+      "title": "Scholarly sources: “Wine as a Central Part of a Meal”",
+      "link": null
+    }
+  ]
+}
