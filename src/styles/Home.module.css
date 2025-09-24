@@ -263,3 +263,41 @@
   color: #0070f3;
   text-decoration: underline;
 }
+
+
+.storiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.storyCard {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.storyCard:hover {
+  transform: translateY(-4px);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.cardQuote {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}

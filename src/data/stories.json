@@ -1,41 +1,50 @@
-{
-  "slug": "",  
-  "title": "",  
-  "quote": "",  
-  "author": "",  
-  "description": "",
-  "photo": "",  
-  "photoCourtesy": "",  
-
-  "videos": [
-    {
-      "title": "",
-      "embedUrl": ""
-    }
-    
-  ],
-
-  "recipes": [
-    {
-      "title": "",
-      "author": "",
-      "type": "",
-      "serves": "",
-      "prepTime": "",
-      "cookTime": "",
-      "image": ""
-    }
-    
-  ],
-
-  "resources": [
-    {
-      "title": "Scholarly Reflection: “Cooking to Experience the World”",
-      "link": null
-    },
-    {
-      "title": "Scholarly sources: “Wine as a Central Part of a Meal”",
-      "link": null
-    }
-  ]
-}
+[
+  {
+    "slug": "monsanto-is-bad",
+    "title": "Monsanto is bad.",
+    "quote": "“Food brings people together. We all have to eat. So, why should it not be enjoyable. Why it should not be good for us. Why can’t we help each other develop the food industry?” – Patricia Palafox Sweisford (March 17, 2019)",
+    "author": "Patricia Palafox Sweisford",
+    "description": "Patricia Palafox Sweisford, a native of El Paso, shares how she has gone from growing up eating mostly canned food, to discovering a passion for healthy, fresh quality food and wine while traveling through Europe. Her passion for food grew to the degree that after retirement from teaching, she enrolled at El Paso Community College’s Culinary Arts program. Her story addresses what she sees as a changing phase of culinary options in El Paso where fresh food, quality dining and good wine is becoming part of El Paso’s landscape.",
+    "photo": "../stories_images/monsato-img.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Patricia Palafox Sweisford",
+    "videos": [
+      {
+        "title": "Culinary Arts Transforming El Paso",
+        "embedUrl": "https://youtu.be/M0f24pKgBO8"
+      },
+      {
+        "title": "Developing a Taste for Food",
+        "embedUrl": "https://youtu.be/78x-j0mJixQ"
+      },
+      {
+        "title": " Patricia's Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/YN4_lHONJ8g"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "",
+        "author": "",
+        "type": "",
+        "serves": "",
+        "prepTime": "",
+        "cookTime": "",
+        "image": ""
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: “Cooking to Experience the World”",
+        "link": null
+      },
+      {
+        "title": "Scholarly sources: “Wine as a Central Part of a Meal”",
+        "link": null
+      },
+      {
+        "title": "Full Food Story (Audio) UTEP's Institute of Oral History",
+        "link": "https://scholarworks.utep.edu/ep_private/8/"
+      }
+    ]
+  }
+]
