@@ -1,7 +1,11 @@
+import Head from "next/head";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import stories from "@/data/stories.json";
+import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";
-import stories from "../../data/stories.json";
 
-export default function StoryPage() {
+export default function StoryDetail() {
   const router = useRouter();
   const { slug } = router.query;
 
@@ -10,53 +14,95 @@ export default function StoryPage() {
   if (!story) return <p>Loading...</p>;
 
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>{story.title}</h1>
-      <blockquote>{story.quote}</blockquote>
-      <p><strong>By:</strong> {story.author}</p>
-      <img src={story.photo} alt={story.author} style={{ maxWidth: "100%" }} />
-      <p><em>Courtesy: {story.photoCourtesy}</em></p>
-      <p>{story.description}</p>
+    <>
+      <Head>
+        <title>{story.title}</title>
+        <meta name="description" content={story.description} />
+      </Head>
 
-      <h3>Videos</h3>
-      <ul>
-        {story.videos.map((v, i) => (
-          <li key={i}>
-            <p>{v.title}</p>
-            <iframe
-              width="560"
-              height="315"
-              src={v.embedUrl}
-              title={v.title}
-              frameBorder="0"
-              allowFullScreen
-            />
-          </li>
-        ))}
-      </ul>
+      <Header />
 
-      {story.recipe && (
-        <>
-          <h3>Recipe</h3>
-          <p>{story.recipe.title} by {story.recipe.author}</p>
-          <img src={story.recipe.image} alt="Recipe" style={{ maxWidth: "100%" }} />
-          <p>Type: {story.recipe.type}</p>
-          <p>Serves: {story.recipe.serves}</p>
-        </>
-      )}
+      <div className={styles.storyContainer}>
+        <p className={styles.storyQuote}>{story.quote}</p>
+        <p className={styles.storyAuthor}>{story.author}</p>
+        <p className={styles.photoCredit}>{story.photoCourtesy}</p>
 
-      <h3>Resources</h3>
-      <ul>
-        {story.resources.map((r, i) => (
-          <li key={i}>
-            {r.link ? (
-              <a href={r.link} target="_blank" rel="noopener noreferrer">{r.title}</a>
-            ) : (
-              <span>{r.title}</span>
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
+        <div className={styles.storyDescription}>
+          <p>{story.description}</p>
+        </div>
+
+        {story.videos && story.videos.length > 0 && (
+          <section className="videos-section">
+            <h2>Videos</h2>
+            {story.videos.map((video, index) => {
+              // Handle both youtu.be and full watch?v= URLs
+              let videoId = "";
+              if (video.embedUrl.includes("youtu.be/")) {
+                videoId = video.embedUrl.split("youtu.be/")[1];
+              } else if (video.embedUrl.includes("watch?v=")) {
+                videoId = video.embedUrl.split("watch?v=")[1];
+              }
+
+              return (
+                <div key={index} className="video-wrapper">
+                  <h3>{video.title}</h3>
+                  <iframe
+                    src={`https://www.youtube.com/embed/${videoId}`}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="video-frame"
+                  />
+                </div>
+              );
+            })}
+          </section>
+        )}
+
+        {story.resources && story.resources.length > 0 && (
+          <div className={styles.resourcesSection}>
+            <h3>Resources</h3>
+            <ul className={styles.resourceList}>
+              {story.resources.map((res, index) => (
+                <li key={index}>
+                  {res.link ? (
+                    <a href={res.link} target="_blank" rel="noopener noreferrer">
+                      {res.title}
+                    </a>
+                  ) : (
+                    res.title
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {story.recipes && story.recipes[0].title && (
+          <div className={styles.recipeSection}>
+            <h3>Recipe</h3>
+            <div className={styles.recipeDetails}>
+              {story.recipes[0].image && (
+                <img
+                  src={story.recipes[0].image}
+                  alt="Recipe"
+                  className={styles.recipeImage}
+                />
+              )}
+              <div>
+                <p><strong>Title:</strong> {story.recipes[0].title}</p>
+                <p><strong>Author:</strong> {story.recipes[0].author}</p>
+                <p><strong>Type:</strong> {story.recipes[0].type}</p>
+                <p><strong>Serves:</strong> {story.recipes[0].serves}</p>
+                <p><strong>Prep Time:</strong> {story.recipes[0].prepTime}</p>
+                <p><strong>Cook Time:</strong> {story.recipes[0].cookTime}</p>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <Footer />
+    </>
   );
 }

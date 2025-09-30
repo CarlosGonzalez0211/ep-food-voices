@@ -5,7 +5,7 @@
     "quote": "“Food brings people together. We all have to eat. So, why should it not be enjoyable. Why it should not be good for us. Why can’t we help each other develop the food industry?” – Patricia Palafox Sweisford (March 17, 2019)",
     "author": "Patricia Palafox Sweisford",
     "description": "Patricia Palafox Sweisford, a native of El Paso, shares how she has gone from growing up eating mostly canned food, to discovering a passion for healthy, fresh quality food and wine while traveling through Europe. Her passion for food grew to the degree that after retirement from teaching, she enrolled at El Paso Community College’s Culinary Arts program. Her story addresses what she sees as a changing phase of culinary options in El Paso where fresh food, quality dining and good wine is becoming part of El Paso’s landscape.",
-    "photo": "../stories_images/monsato-img.jpg",
+    "image": "/stories_images/monsato-img.jpg",
     "photoCourtesy": "Photo By/Courtesy of Patricia Palafox Sweisford",
     "videos": [
       {
@@ -46,5 +46,576 @@
         "link": "https://scholarworks.utep.edu/ep_private/8/"
       }
     ]
+  },
+  {
+    "slug": "machelle-wood",
+    "quote": "Food helps make connections between people now to people in the past, to make them ‘real.’",
+    "author": "Machelle Wood",
+    "image": "/stories_images/machelle_wood.jpg",
+    "imageCourtesy": "Photo by/Courtesy of",
+    "title": "Historical recipes humanize the past.",
+    "description": "Machelle Wood is the educational and special events coordinator at the Magoffin Home State Historical Site in El Paso, Texas. In the food story that she shares for EPFV, she speaks of how food and the emotions it evokes always seem to root her back to what she defines as home: El Paso. At the Magoffin Home, she is proud to offer cooking demonstration classes. The recipes for these demonstrations are gathered from the first cookbook published in El Paso by the Ladies’ Auxiliary for YMCA. For Wood, food powerfully communicates the humanity of those who lived in the past, and through the senses this past is felt vividly in the present.",
+    "videos": [
+      {
+        "title": "Cooking at the Magoffin Home",
+        "url": "https://youtu.be/XH2-0Ue2Slk"
+      },
+      {
+        "title": "Machelle's Full Food Story (Audio)",
+        "url": "https://youtu.be/67vasZWaWP0"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: “Food and the Senses: Remembering the Past, Living the Present, Shaping the Future”",
+        "url": "https://example.com/food-and-the-senses"
+      },
+      {
+        "title": "Scholarly Sources: “Food in Museum Setting”",
+        "url": "https://example.com/food-in-museums"
+      },
+      {
+        "title": "Full Food Story (Audio) – UTEP's Institute of Oral History",
+        "url": "https://scholarworks.utep.edu/ep_public/7/"
+      }
+    ],
+    "recipe": null
+  }, 
+  {
+    "slug": "oso-good-culinary-program",
+    "title": "Creating opportunities while teaching with food",
+    "quote": "“It was something that always interest me as far as how can I create art with my hands.” – Chef Christopher Puga (Nov. 18, 2018)",
+    "author": "Christopher Puga",
+    "description": "Christopher Puga became the culinary arts instructor at Bowie High School and quickly built the Oso’ Good Catering and Food Truck program with the assistance of his students. Before becoming a successful and impactful culinary arts teacher, Chef Puga enjoyed cooking and was inspired by reality television shows and cooking competitions. He baked his first cake as a child, and while it may not have been up to his present day standards, he realized that he had a passion for making art with his hands. Upon beginning his teaching career, Chef Puga was surprised to find a budding program that had come into fruition through Bowie High School’s Class of 2017’s hard work. A committed group of students and Chef Puga built a curriculum from the ground up centered around the food truck, which they called the Oso’ Good Food Truck and Catering. As the program took off, the food truck and catering program grew in popularity.",
+    "image": "/stories_images/christopher_puga.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Joshua I. Lopez",
+    "videos": [
+      {
+        "title": "The Oso Good Culinary Arts Program",
+        "embedUrl": "https://youtu.be/o5NPGndnXGs"
+      }
+    ],
+    "recipes": [],
+    "resources": [
+      {
+        "title": "Scholarly Reflection",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources",
+        "link": null
+      },
+      {
+        "title": "Full Food Story (Audio) UTEP's Institute of Oral History",
+        "link": "https://scholarworks.utep.edu/ep_private/INSERT_LINK_ID/"
+      }
+    ]
+  }, 
+  {
+    "slug": "chef-luis-borderland-story",
+    "title": "“I’m a damn good chef, and I show it.”",
+    "quote": "“The pantry is a lot different than the office. The pantry has its own world. Being over in the pantry is a lot of fun and I know I make life easier for Julie because the knowledge I have about food helps a lot. We make a good team.” – Luis Orozco",
+    "author": "Luis Orozco",
+    "description": "Luis Orozco’s life in food began at a very young age. Inspired by a pan salesman, who set his pans ablaze, Luis decided to become a chef. As a young teenager, Luis’s grandfather sent him on a bus to New York where he would later receive training in the culinary arts. Following his graduation, cooking took Luis around the world and back to El Paso, Texas, where he worked at many local restaurants. After Luis suffered a heart attack on the job, he sought a life where he can still do work he enjoyed without the stress of a busy kitchen. That’s when he found the Borderland Rainbow Center. There, Luis began volunteering at the food pantry, and since then has found a new family and purpose - serving El Paso’s various communities through food.",
+    "image": "/stories_images/luis_orozco.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Luis Orozco",
+    "videos": [
+      {
+        "title": "Becoming Chef Luis",
+        "embedUrl": "https://youtu.be/SuxK8ItHva4"
+      },
+      {
+        "title": "Proud Chef",
+        "embedUrl": "https://youtu.be/9sL0Gp1DZSs"
+      },
+      {
+        "title": "Borderland Rainbow Center",
+        "embedUrl": "https://youtu.be/hL4DPcDCDMo"
+      },
+      {
+        "title": "Luis' Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/NyWMA_hePEA"
+      }
+    ],
+    "recipes": [],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: “Queer Work and the Professional Kitchen” (Coming Soon.)",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources: “Intersections of Food, Labor, and LGBT Histories” (Coming Soon)",
+        "link": null
+      },
+      {
+        "title": "Full Food Story (Audio): UTEP's Institute of Oral History (Coming Soon)",
+        "link": null
+      }
+    ]
+  }, 
+  {
+    "slug": "robert-flores-spiritual-food-story",
+    "title": "“My grandma and I managed to communicate through her cooking.”",
+    "quote": "“If there is anything I’ve learned from my experience with food, with my experiences with my church family, and my upbringing it’s that give bread to those who are hungry, and hunger to those who have bread, making sure we are fed in all aspects of our lives.” – Robert Flores",
+    "author": "Robert Flores",
+    "description": "Robert Flores grew up in the lower valley neighborhoods closest to Bel Air High School. As a child, Robert was often cared for by his grandparents, particularly his grandfather who would take care of Robert after school. Many of the lessons he learned from his grandparents came to inform his values. During his teen years, and influenced by his family upbringing, Robert became involved at St. Pius X Catholic Parish, where he has continued to build community and serve in youth and young adult ministries. Throughout his story, he references his “church family,” which is a close knit group of friends Robert has made through activities at St. Pius X. It is through his many families that he has learned the value of sharing and caring for one another, something that food has communicated throughout his life.",
+    "image": "/stories_images/robert_flores.jpeg",
+    "photoCourtesy": "Photo By/Courtesy of Robert Flores",
+    "videos": [
+      {
+        "title": "Spiritual Nourishment",
+        "embedUrl": "https://youtu.be/69xSDSdZwE8"
+      },
+      {
+        "title": "Making New Memories in the Kitchen",
+        "embedUrl": "https://youtu.be/cUC-NBc0bQA"
+      },
+      {
+        "title": "Robert's Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/hmKybtvVCOo"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "“Secret” Family Cream Puffs",
+        "author": "Robert Flores",
+        "type": "American Pastries",
+        "servings": "8 People",
+        "prepTime": "15 minutes",
+        "cookTime": "20 minutes",
+        "image": "/recipes_images/robert_recipe.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: “Exploring El Paso’s Many Spiritualities Through Food” (Coming Soon.)",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources: “Understanding Food, Spirituality, and the Body” (Coming Soon)",
+        "link": null
+      }
+    ]
+  }, 
+  {
+    "slug": "leticia-miguel-hernandez-sausage-shop",
+    "title": "“We are grateful for our clients”",
+    "quote": "“Joe Hryszlo, [original owner of The Sausage Shop] was kind enough to share his recipes with us. The Sausage Shop has helped us in a lot of aspects. We’d want to be able to do the same for someone else.” – Leticia & Miguel Hernandez",
+    "author": "Leticia & Miguel Hernandez",
+    "description": "Leticia, better known as Lety, and her husband, Miguel Hernandez acquired The Sausage Shop, located at 3903 Tompkins Street, El Paso, Texas in January 2007. But they had been part of its history and operation much earlier. Joseph Hryszko, the original owner, was Lety’s sister’s father-in-law. Joe was born in Harrison, New Jersey, and joined the US Army at age 18. He attended boot camp in El Paso and fell in love with the city, the culture, and the people. Over his career, he was stationed at Ft. Bliss several times, and early on knew this is where he would retire. Joe was the first generation from his family to make El Paso his home along with his wife Clarita and four children. He lived approximately 50 years in El Paso, TX, until his passing, August 6, 2010. The Sausage Shop, however, remains a family business. Lety and Miguel’s family members, sons, grandchildren, niece and nephew have been part of the daily operation of The Sausage Shop. The Hernandez continue making many of the sausages Joe made, but have added their own creations: Pico de Gallo; Roasted Garlic/Jalapeno; Jalapeno Cheddar; Bacon Brat; Bacon, Cheddar Brats and a Habanero Cheese Dip. They, on a number of occasions, have (and will) prepare special family recipes, for example, South African Boerewors, Argentine Chorizo, and Pinklewurst.",
+    "image": "/stories_images/leticia_miguel.png",
+    "photoCourtesy": "Photo By/Courtesy of Meredith E. Abarca",
+    "videos": [
+      {
+        "title": "Joseph Hryszko's Dream",
+        "embedUrl": "https://youtu.be/PsMze-ObBfQ"
+      },
+      {
+        "title": "The Hernandez Take Over",
+        "embedUrl": "https://youtu.be/0WqDZtKWgAw"
+      },
+      {
+        "title": "Sausage of the Border and Beyond",
+        "embedUrl": "https://youtu.be/UU8fTRNoYSE"
+      },
+      {
+        "title": "Leticia & Miguel's Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/KAYuoxhzlao"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Sausage Making Demo",
+        "author": "Miguel & Leti Hernandez",
+        "type": "German",
+        "servings": "30 People",
+        "prepTime": "20 minutes",
+        "cookTime": "20 minutes",
+        "image": "/recipes_images/robert_recipe.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: “Southwestern Flavors in German-Polish Sausage Making”",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources: “Familial Wealth: Family Owned Businesses”",
+        "link": null
+      },
+      {
+        "title": "Leticia and Miguel (The Sausage Shop)/Audio: UTEP's Institute of Oral History",
+        "link": "https://scholarworks.utep.edu/ep_private/INSERT_LINK"
+      }
+    ]
+  }, 
+  {
+    "slug": "elisa-licona-southern",
+    "title": "“La sobremesa es donde todo pasa, donde todo se platica.”",
+    "quote": "In El Paso, Texas, from Chico’s Tacos to Café Central, for Elisa Licona Southern restaurants are important to her family; it is where they “gather to visit and celebrate.”",
+    "author": "Elisa Licona Southern",
+    "description": "Elisa Licona Southern, a native of El Paso who simply “loves El Chuco,” is the oldest daughter of a mixed ethnic/cultural couple, Dorothy Long from Missouri and Guillermo Raymundo Licona from El Paso. Elisa’s mother, and later her husband Todd Southern, became “third spacers” within the Mexican culture. Elisa’s life from childhood to adulthood has been centered in El Paso and Casas Grandes, Chihuahua, Mexico, particularly the Hacienda Corralitos. This experience has led her to appreciate the uniqueness of northern Mexican foods. Restaurants have always been important sites of family gatherings in Elisa’s life. Not only did she grow up eating at Chico’s Tacos, but its founder Joe Mora was a good friend of her father’s, as well Pete Lopez from Pete’s Meats on Alabama Street. She also has a family connection with Raúl Gonzalez from Rulis’ International Kitchen. Her son, Mario Southern has become a restaurateur and with his business partners owns the Wings Daddy’s food chain and has recently acquired Charcoaler.",
+    "image": "/stories_images/elisa.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Elisa Licona Southern",
+    "videos": [
+      {
+        "title": "Sobremesa, the 'Real' Meal",
+        "embedUrl": "https://youtu.be/c3ma-A5_hT8"
+      },
+      {
+        "title": "Sobremesa at Restaurants",
+        "embedUrl": "https://youtu.be/I-_rojGBeVw"
+      },
+      {
+        "title": "Procuring Food without Box Stores",
+        "embedUrl": "https://youtu.be/h-sM8M-gxmo"
+      },
+      {
+        "title": "Elisa's Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/6pn-oBAe0pE"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Albóndigas",
+        "author": "Elisa Licona Southern",
+        "type": "Mexican",
+        "servings": "8 People",
+        "prepTime": "20 minutes",
+        "cookTime": "35 to 45 minutes",
+        "image": "/recipes_images/elisa_recipe.png"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: “From Corner to Box Stores: Transforming a Community’s Eating Habits”",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources: “Global Food Systems Impacting Everyday Food Choices”",
+        "link": "https://minersutep-my.sharepoint.com/:b:/g/personal/mabarca_utep_edu/EaGCxJjUo65AmO-lActzuTUBhb16EtyYl-WqOwyc5CD1uw?e=r85jPx"
+      },
+      {
+        "title": "Full Food Story (Audio): UTEP's Institute of Oral History",
+        "link": "https://scholarworks.utep.edu/ep_private/10/"
+      }
+    ]
+  }, 
+  {
+    "slug": "hugo-a-loera",
+    "title": "“Food means keeping my mom alive.”",
+    "quote": "“My family is kind of quiet sometimes. We don’t talk a lot or have closeness in terms of sharing a lot of our personal stuff, but I do feel that [food] is my way of sharing with them, you know, cooking a meal for them, making them feel like I care. I can do that through food.”",
+    "author": "Hugo A. Loera",
+    "description": "Hugo A. Loera spent his youth on both sides of the El Paso-Juarez border. He grew up primarily on the eastside of El Paso with his two younger sisters and his parents. His mother, Rosalva Loera, was his inspiration for cooking. Hugo was curious in the kitchen, watching her and his grandmother cook some of his favorite foods. Since Rosalva’s passing in 2010, Hugo keeps her alive through cooking her recipes, some which she has handed down in handwritten cookbooks, and others Hugo learned by just watching. Hugo’s relationship to food is deeply bound to his memories of his mother, but also in trying to live in a balanced relationship with his body and his cravings. Hugo is an accountant and lives with his partner in Denton, Texas.",
+    "image": "/stories_images/hugo.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Joshua I. Lopez",
+    "videos": [
+      {
+        "title": "Balancing Wellness with Pleasurable Eating",
+        "embedUrl": "https://youtu.be/y60VC8Bt4Jc"
+      },
+      {
+        "title": "Sabritas",
+        "embedUrl": "https://youtu.be/2vtAuZWs2yM"
+      },
+      {
+        "title": "Cooking to Remember",
+        "embedUrl": "https://youtu.be/1hitDyGnj-o"
+      },
+      {
+        "title": "Hugo's Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/RecT7f1EzMY"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Chiles Rellenos",
+        "author": "Hugo A. Loera",
+        "type": "Fusion Mexican",
+        "servings": "6 People",
+        "prepTime": "30 minutes",
+        "cookTime": "15 minutes",
+        "image": "/recipes_images/chiles_rellenos.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: “‘To our mothers: queer advocates:’ A History of Gay Latino Men Remembering Their Mothers”",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources: “Food in LGBTQ+ Latinx Literature”",
+        "link": null
+      },
+      {
+        "title": "Full Food Story (Audio): UTEP's IOH Collection",
+        "link": null
+      }
+    ]
+  },
+  {
+    "slug": "lori-lowman-hutson",
+    "title": "“Food is the past as well as the future.”",
+    "quote": "“When I thinking about food, when I smell certain foods cooking, when I make a recipe that was given to me by someone else, is all about memories.”",
+    "author": "Lori Lowman-Hutson",
+    "description": "Lori Lowman Hutson shares how her palate and that of her children have been exposed and have embraced a smorgasbord of culinary traditions. Beginning with her own childhood, she is only the second generation born in El Paso. The first generation of her family arrived to El Paso in 1907 from the Pittsburg, Pennsylvania area; they brought with them culinary traditions from Maryland, Virginia and the Deep South. Married twice, Lori has expanded her culinary smorgasbord through both her mothers-in-law. She affirms that it was through her second marriage with Eric Hutson that she entered an “awakening” of her taste buds.",
+    "image": "/stories_images/lori_lowman.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Lori Lowman-Hutson and Erik Hutson",
+    "videos": [
+      {
+        "title": "Connecting the Past, Present, & Future",
+        "embedUrl": "https://youtu.be/ha052D1l7Ms"
+      },
+      {
+        "title": "Expanding Palates, Tasting the World",
+        "embedUrl": "https://youtu.be/0CXkiIkld4s"
+      },
+      {
+        "title": "When Eating Out: Then & Now",
+        "embedUrl": "https://youtu.be/jrmTSCOvK9Q"
+      },
+      {
+        "title": "Lori Lowman-Hutson Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/SVWMJnKvZEg"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Mimi's Chili",
+        "author": "Lori Lowman-Hutson",
+        "type": "Southern",
+        "servings": "8 People",
+        "prepTime": "15 minutes",
+        "cookTime": "45 minutes",
+        "image": "/recipes_images/mimi.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: \"Global Taste in a Family Palate\"",
+        "link": null
+      },
+      {
+        "title": "Scholarly Source: Migration of Culinary Histories",
+        "link": null
+      },
+      {
+        "title": "Full Food Story (UTEP's IOH collection)",
+        "link": "https://scholarworks.utep.edu/ep_private/INSERT_LINK"
+      }
+    ]
+  }, 
+  {
+    "slug": "marion-christina-rohrleitner",
+    "title": "“Austrian food is a mutt cuisine”",
+    "quote": "“When I came to El Paso, I was curious and wanted to [try menudo]. I took my first taste and very quickly realized, ‘oh, this is tripe soup.' Thankfully, there is a lot of chile in this version of tripe soup, and it covers some of the smell.”",
+    "author": "Marion Christina Rohrleitner",
+    "description": "Marion Christina Rohrleitner came to El Paso to work as a literature professor in the Department of English at the University of Texas at El Paso in 2005. In her food story, she shares the history and mixture of cultures that have made Austrian foodways, for her, into a “mutt cuisine.” She also shares the new flavors the Mexican and Southwest foods have added to her culinary palate and that of some of her family and Austrian friends, such as Hatch Green Chiles from New Mexico, pecans, avocados (while accessible in Austria, her mother didn’t like them and they were too expensive to get there), tamales, and cactus. Hosting at home and learning new recipes is central to Marion’s culinary story.",
+    "image": "/stories_images/marion.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Marion Christina Rohrleitner",
+    "videos": [
+      {
+        "title": "Austrian Food is Mutt Cuisine",
+        "embedUrl": "https://youtu.be/PHBhDnwBNL4"
+      },
+      {
+        "title": "Gifts of Generosity",
+        "embedUrl": "https://youtu.be/hPiANXKcjG0"
+      },
+      {
+        "title": "El Pasoan Austrian Palate",
+        "embedUrl": "https://youtu.be/PXic6OxhzYo"
+      },
+      {
+        "title": "Marion's Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/PXic6OxhzYo"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Apfelstrudel (Apple Strudel)",
+        "author": "Marion Christina Rohrleitner",
+        "type": "Austrian",
+        "servings": "8 People",
+        "prepTime": "45 minutes",
+        "cookTime": "45 minutes",
+        "image": "/recipes_images/apfelstrudel.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources",
+        "link": null
+      },
+      {
+        "title": "Full Food Story (Audio/UETP's Institute of Oral History)",
+        "link": "https://scholarworks.utep.edu/ep_private/INSERT_LINK"
+      }
+    ]
+  }, 
+  {
+    "slug": "raul-gonzalez",
+    "title": "“An open palate welcomes the world.”",
+    "quote": "“If you open up your palate, you open up your mind because you are opening to new experiences.”",
+    "author": "Chef Raúl Gonzalez",
+    "description": "Chef and restaurant owner Raúl Gonzalez, better known as Chef Rulis, claims that where we eat matters less than who makes the food. As a young man, he experienced no difference between eating in Quito, Ecuador or El Paso, Texas, because his mother’s hands prepared and served the food. Despite the change in available ingredients, the flavors of home continued to be defined by his mother. Rulis’ story shows us how a person’s sazón can define and anchor our identities to food.",
+    "image": "/stories_images/raul.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Raúl Gonzalez",
+    "videos": [
+      {
+        "title": "Palate without Borders",
+        "embedUrl": "https://youtu.be/Vmz81igh4Zg"
+      },
+      {
+        "title": "Cooking is My Zen",
+        "embedUrl": "https://youtu.be/vyKoBvnUh_M"
+      },
+      {
+        "title": "Food is About Respect",
+        "embedUrl": "https://youtu.be/vwctOAURs7s"
+      },
+      {
+        "title": "Raúl Gonzalez' Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/h2b_ITjrMV4"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "How Sushi Made it to the Border",
+        "author": "Chef Rulis (Raúl Gonzalez)",
+        "type": "Japanese Border Style",
+        "servings": "8 People",
+        "prepTime": "45 minutes",
+        "cookTime": "20 minutes",
+        "image": "/recipes_images/sushi.png"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: “Food Sustainability: Local Networks of Support.”",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources: Local and Native Foods of the Chihuahuan Desert",
+        "link": null
+      },
+      {
+        "title": "Full Food Story (Audio)",
+        "link": "https://scholarworks.utep.edu/ep_private/INSERT_LINK"
+      }
+    ]
+  }, 
+  {
+    "slug": "araceli-borunda",
+    "title": "“El mercado es el espíritu de la ciudad.”",
+    "quote": "Araceli: “[Mi’ja] Creo que no voy a poder salir a vender [café] mañana. No sé qué estoy haciendo.” Tamara: “’Mamá, si no te da miedo [tu sueño] es porque no es lo suficientemente grande.”",
+    "author": "Araceli Borunda",
+    "description": "Araceli Borunda has been passionate about food all of her life, in particular she has had an affinity for mercados—a word in Spanish that includes farmer’s markets and more. For her, entering a mercado of any village, town or city anywhere in the world, one can smell, see, and taste the flavors of a culture. In mercados one can feel the spirit of a place and its people. With her coffee truck, Calvi, she forms part of this spirit.",
+    "image": "/stories_images/araceli.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Araceli Borunda",
+    "videos": [
+      {
+        "title": "Mercados: The Soul of a City",
+        "embedUrl": "https://youtu.be/Dj696z8uX_Q"
+      },
+      {
+        "title": "Calvi: Restaurant First",
+        "embedUrl": "https://youtu.be/rfxuPUzbnqY"
+      },
+      {
+        "title": "Calvi: Coffee Truck",
+        "embedUrl": "https://youtu.be/9M7tyHfuGoo"
+      },
+      {
+        "title": "Araceli's Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/1hAD3Px50wc"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Tortilla Azteca",
+        "author": "Araceli Borunda",
+        "type": "Mexican",
+        "servings": "4 People",
+        "prepTime": "45 minutes",
+        "cookTime": "45 minutes",
+        "image": "/recipes_images/tortilla.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: \"Where the soul of a City Lives\"",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources: From Farm to Table in El Paso Area",
+        "link": null
+      },
+      {
+        "title": "Full Food Story (Audio)",
+        "link": "https://scholarworks.utep.edu/ep_private/INSERT_AUDIO_LINK"
+      }
+    ]
+  }, 
+  {
+    "slug": "lucy-fischer-west",
+    "title": "“For me, food is a blessing that carries a responsibility.”",
+    "quote": "“When I cook, it is an offering to the people that bless my table.”",
+    "author": "Lucy Fischer-West",
+    "description": "Lucy Fischer-West reflects on the role a person’s hands play when cooking; it’s through the hands that emotions are added to food, giving it a flavor that forever stays in our palate. As she remembers her mother’s food, she recognizes that the unique taste of her “thrown-together meals emanated from her hands in the same way [her] grandmother’s meals and her grandmother’s before hers did.” Lucy’s hands carry knowledge, emotions, and memories that are relived every time she prepares a meal once cooked by those who have loved her and whom she has loved through the years.",
+    "image": "/stories_images/lucy.jpg",
+    "photoCourtesy": "Photo By/Courtesy of Meredith E. Abarca",
+    "videos": [
+      {
+        "title": "Food Traditions from Home",
+        "embedUrl": "https://youtu.be/FzeoBQoGgPQ"
+      },
+      {
+        "title": "Food Traditions from Afar",
+        "embedUrl": "https://youtu.be/FzeoBQoGgPQ"
+      },
+      {
+        "title": "Eating Out on the Border",
+        "embedUrl": "https://youtu.be/_EGiVtY4Z5o"
+      },
+      {
+        "title": "Simple Gifts",
+        "embedUrl": "https://youtu.be/fSowG2hp7Rk"
+      },
+      {
+        "title": "Lucy’s Full Food Story (Audio)",
+        "embedUrl": "https://youtu.be/Tmm352c-KVk"
+      }
+    ],
+    "recipes": [
+      {
+        "title": "Chicken 'n Dumplings",
+        "author": "Lucy Fischer-West",
+        "type": "Southern",
+        "servings": "8 People",
+        "prepTime": "45 minutes",
+        "cookTime": "30 minutes",
+        "image": "/recipes_images/dumplings.jpg"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Scholarly Reflection: “Spirituality in Commensality”",
+        "link": null
+      },
+      {
+        "title": "Scholarly Sources: Native (U.S. Southwest) and Mexican Culinary Connections",
+        "link": null
+      },
+      {
+        "title": "Full Food Story (Audio)",
+        "link": "https://scholarworks.utep.edu/ep_private/INSERT_AUDIO_LINK"
+      }
+    ]
   }
+
 ]

@@ -2,11 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 import Link from "next/link";
-import stories from "../data/stories.json"; // or from /public if using fetch
+import stories from "../data/stories.json";
 
 export default function Stories() {
   return (
@@ -21,7 +21,7 @@ export default function Stories() {
 
       <div className={styles.page}>
         <main className={styles.main}>
-          {/* Hero section */}
+          {/* Hero Section */}
           <div className={styles.heroContainer}>
             <Image
               src="/about_images/about.jpg"
@@ -35,22 +35,24 @@ export default function Stories() {
             </div>
           </div>
 
-          {/* Cards list */}
-          <div className={styles.cardGrid}>
+          {/* Responsive Grid of Story Cards */}
+          <div className={styles.storiesGrid}>
             {stories.map((story) => (
               <div key={story.slug} className={styles.storyCard}>
                 <Image
                   src={story.image}
                   alt={`Image of ${story.author}`}
-                  width={300}
-                  height={200}
+                  width={400}
+                  height={250}
                   className={styles.cardImage}
                 />
-                <h3>{story.title}</h3>
-                <p><strong>{story.author}</strong></p>
-                <Link href={`/stories/${story.slug}`}>
-                  <span className={styles.cardLink}>Read More →</span>
-                </Link>
+                <div className={styles.cardContent}>
+                  <h3>{story.title}</h3>
+                  <p><strong>{story.author}</strong></p>
+                  <Link href={`/stories/${story.slug}`}>
+                    <span className={styles.cardLink}>Read More →</span>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
