@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "jarek-aniszewski",
+    "title": "Episode 1: Jarek Aniszewski",
+    "quote": "We say in Polish, ‘when the guest comes into the house, God follows.’ Having a guest is like being blessed.",
+    "author": "Jarek Aniszewski",
+    "host": "Charis Saenz",
+    "image": "/podcast_images/jarek_aniszewski.jpg",
+    "photoCourtesy": "Photo courtesy of Jarek Aniszewski",
+    "links": [
+      { "label": "Podcast Link: \"Dinner at the Aniszewskis\"", "url": "" },
+      { "label": "Host/ess: Charis Saenz", "url": "" },
+      { "label": "Guest: \"Jarek Aniszewski, a Polamex\"", "url": "" },
+      { "label": "Podcast Proposal: \"The Act of Eating Together\"", "url": "" },
+      { "label": "Script: \"Conversation with Jarek Aniszewski\"", "url": "" },
+      { "label": "Scholarly Engagement: \"Commensality\"", "url": "" },
+      { "label": "The Humanities in Food Practice: \"Feeding Fellowship\"", "url": "" }
+    ]
+  },
+  {
+    "slug": "lyuba-titovets",
+    "title": "Episode 2: Lyuba Titovets",
+    "quote": "I love to paint pomegranates. I’m lucky enough [to have] pomegranates in my garden. They all have character for me; they all have meaning for me.",
+    "author": "Lyuba Titovets",
+    "host": "Stephanie Bulloch",
+    "image": "/podcast_images/lyuba_titovets.jpg",
+    "photoCourtesy": "Photo courtesy of Janet Hill",
+    "links": [
+      { "label": "Podcast Link: \"Food in Art/Art in Food\"", "url": "" },
+      { "label": "Host/ess: Stephanie Bulloch", "url": "" },
+      { "label": "Guest: \"Lyuba Titovets, Artist\"", "url": "" },
+      { "label": "Podcast Proposal: \"Food in Art\"", "url": "" },
+      { "label": "Script: \"Food in Artistic Inspiration\"", "url": "" },
+      { "label": "Scholarly Engagement: \"The Aesthetics in Food\"", "url": "" },
+      { "label": "The Humanities in Food Practice: \"The Food of Art\"", "url": "" }
+    ]
+  },
+  {
+    "slug": "dino-chiecchi",
+    "title": "Episode 3: Dino Chiecchi",
+    "quote": "It is a story that needs to be told and a story that needs to be shown.",
+    "author": "Dino Chiecchi",
+    "host": "Laura Mae Heredia",
+    "image": "/podcast_images/dino_chiecchi.png",
+    "photoCourtesy": "Photo courtesy of Dino Chiecchi",
+    "links": [
+      { "label": "Podcast Link: \"Life Through the Lens: Food, People, Photography\"", "url": "" },
+      { "label": "Host/ess: Laura Mae Heredia", "url": "" },
+      { "label": "Guest: \"Dino Chiecchi, Professor of Photojournalism\"", "url": "" },
+      { "label": "Podcast Proposal: \"Controlling the Camera\"", "url": "" },
+      { "label": "Script: \"Life Through the Lens: Food, People, Photography\"", "url": "" },
+      { "label": "Scholarly Engagement: \"Food in Photojournalism\"", "url": "" },
+      { "label": "The Humanities in Food Practice: \"Food and Photography: The Ultimate Experience of Survival\"", "url": "" }
+    ]
+  },
+  {
+    "slug": "adriana-wilcox",
+    "title": "Episode 4: Adriana Wilcox",
+    "quote": "At the end of the day, healthy food and access to it is a human right, not [a] privilege. Everyone should have access. Everyone should have a place at the table.",
+    "author": "Adriana Wilcox",
+    "host": "Meredith E. Abarca",
+    "image": "/podcast_images/adrianna_wilcox.jpeg",
+    "photoCourtesy": "Photo courtesy of Adriana Wilcox",
+    "links": [
+      { "label": "Podcast Link: \"Food Justice as a Community Action\"", "url": "" },
+      { "label": "Host/ess: Meredith E. Abarca", "url": "" },
+      { "label": "Guest: \"Adriana Wilcox, Food Entrepreneur\"", "url": "" },
+      { "label": "Podcast Proposal: \"Food Justice in Food Deserts\"", "url": "" },
+      { "label": "Script: \"A Social Entrepreneur's Effort to Feed a Community\"", "url": "" },
+      { "label": "Scholarly Engagement: \"Food Justice, Community Gardens and Food Deserts\"", "url": "" },
+      { "label": "The Humanities in Food Practice: \"...\"", "url": "" }
+    ]
+  },
+  {
+    "slug": "juan-gonzalez",
+    "title": "Episode 5: Juan Gonzalez",
+    "quote": "I never thought I would be a baker; I didn’t want to own a bakery.",
+    "author": "Juan Gonzalez",
+    "host": "Chyanne Smith",
+    "image": "/podcast_images/juan_gonzalez.jpeg",
+    "photoCourtesy": "Photo courtesy of Juan Gonzalez",
+    "links": [
+      { "label": "Podcast Link: \"Baking Mexican Traditions\"", "url": "" },
+      { "label": "Host/ess: Chyanne Smith", "url": "" },
+      { "label": "Guest: \"Juan Gonzalez, Baker\"", "url": "" },
+      { "label": "Podcast Proposal: \"The History of a Bakery\"", "url": "" },
+      { "label": "Script: \"La Sevillana: A Mexican Bakery in the Lower Valley\"", "url": "" },
+      { "label": "Scholarly Engagement: \"Origins and Cultural Symbols of Some Mexican Foods\"", "url": "" },
+      { "label": "The Humanities in Food Practice: \"A Culture of Bread\"", "url": "" }
+    ]
+  },
+  {
+    "slug": "consuelo-carr-salas-and-josh-lopez",
+    "title": "Episode 6: Dr. Consuelo Carr Salas and Josh Lopez",
+    "quote": "",
+    "author": "Dr. Consuelo Carr Salas and Josh Lopez",
+    "host": "Meredith E. Abarca",
+    "image": "/podcast_images/consuelo_josh.png",
+    "photoCourtesy": "Photo courtesy of Dr. Meredith Abarca",
+    "links": [
+      { "label": "Podcast Link: \"Food Studies in the Humanities and New Life's Journeys\"", "url": "" },
+      { "label": "Host/ess: Meredith E. Abarca", "url": "" },
+      { "label": "Guest: \"Dr. Consuelo Carr Salas and Ph.D. student Josh Lopez\"", "url": "" },
+      { "label": "Podcast Proposal: \"Former UTEP students\"", "url": "" },
+      { "label": "Script: \"Conversation with Consuelo and Josh\"", "url": "" },
+      { "label": "Scholarly Engagement: \"Food Studies\"", "url": "" },
+      { "label": "The Humanities in Food Practice: \"Food Studies: Language of Multiple Stories\"", "url": "" }
+    ]
+  }
+]

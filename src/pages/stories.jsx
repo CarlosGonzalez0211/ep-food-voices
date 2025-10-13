@@ -17,8 +17,10 @@ export default function Stories() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
+      {/* Header import */}
       <Header />
 
+      {/* Page Content */}
       <div className={styles.page}>
         <main className={styles.main}>
           {/* Hero Section */}

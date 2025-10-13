@@ -93,7 +93,7 @@ export default function StoryDetail() {
                 <p><strong>Title:</strong> {story.recipes[0].title}</p>
                 <p><strong>Author:</strong> {story.recipes[0].author}</p>
                 <p><strong>Type:</strong> {story.recipes[0].type}</p>
-                <p><strong>Serves:</strong> {story.recipes[0].serves}</p>
+                <p><strong>Serves:</strong> {story.recipes[0].servings}</p>
                 <p><strong>Prep Time:</strong> {story.recipes[0].prepTime}</p>
                 <p><strong>Cook Time:</strong> {story.recipes[0].cookTime}</p>
               </div>
