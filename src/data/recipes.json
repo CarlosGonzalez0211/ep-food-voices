@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "family-cream-puffs",
+    "title": "“Secret” Family Cream Puffs",
+    "author": "Robert Flores",
+    "image": "/recipes_images/cream_puffs/cream_puffs_cover.jpg",
+    "type": "American Pastries",
+    "serves": "8 People",
+    "prepTime": "15 minutes",
+    "cookTime": "20 minutes",
+    "photoCredit": "Photo by: Meredith E. Abarca",
+    "ingredientsTitle": "Ingredients for “Secret” Family Cream Puffs:",
+    "ingredientsNote": "INGREDIENTS (in approximation).",
+    "ingredients": [
+      "Water, enough to cover a stick of butter",
+      "One stick of butter",
+      "Salt",
+      "About two cups of flour",
+      "Four Eggs",
+      "One block of cream cheese",
+      "Powdered sugar, add as needed",
+      "One can of sweetened condensed milk"
+    ],
+    "noteTitle": "Note",
+    "noteBody": "This is a recipe that Robert learned simply by observing his father make it without ever using any specific measurements.",
+    "videoTitle": "Video",
+    "videoUrl": "https://youtu.be/i2FsYgOGawc",
+    "galleryTitle": "Gallery",
+    "gallery": [
+      { "src": "/recipes_images/cream_puffs/cream_puffs_1.png", "alt": "Melting butter in pot" },
+      { "src": "/recipes_images/cream_puffs/cream_puffs_2.png", "alt": "Dough scoops on tray" },
+      { "src": "/recipes_images/cream_puffs/cream_puffs_3.png", "alt": "Filling the puffs" }
+    ]
+  }
+]

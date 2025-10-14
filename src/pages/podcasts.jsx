@@ -1,42 +1,56 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import styles from "@/styles/Podcast.module.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+import podcasts from "../data/podcasts.json";
+import PodcastCard from "@/components/PodcastCard";
 
 export default function Podcasts() {
   return (
     <>
       <Head>
         <title>Podcasts</title>
-        <meta name="description"/>
+        <meta
+          name="description"
+          content="Listen to our podcast series featuring community voices, stories, and food culture."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      {/* Header import */}
+      {/* Header */}
       <Header />
 
-      {/* Page Content */}
-      <div className={`${styles.page}`}>
+      {/* Hero */}
+      <div className={styles.page}>
         <main className={styles.main}>
           <div className={styles.heroContainer}>
             <Image
-              src="/about_images/about.jpg"
-              alt="Background"
+              src="/podcast_images/podcasts_background.jpg"
+              alt="Podcasts background"
               className={styles.heroBg}
-              width={1000}
-              height={600}
+              width={1600}
+              height={900}
+              priority
             />
-          </div>
-          <div className={styles.textOverlayMiddle}>
-              <h2>About</h2>
+            <div className={styles.textOverlayMiddle}>
+              <h2>Podcasts</h2>
             </div>
+          </div>
         </main>
-    </div>
+      </div>
 
-      {/* Footer import */}
-      <Footer/>
+      {/* Episode list (image left, details right) */}
+      <section className={styles.listContainer}>
+        {Array.isArray(podcasts) &&
+          podcasts.map((p) => <PodcastCard key={p.slug} podcast={p} />)}
+      </section>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
