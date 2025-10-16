@@ -177,9 +177,9 @@
     "videoUrl": "https://youtu.be/ZyYpGSJz978",
     "galleryTitle": "Gallery",
     "gallery": [
-      { "src": "/recipes_images/chili/chili_1.jpg", "alt": "Chili step 1" },
-      { "src": "/recipes_images/chili/chili_2.jpg", "alt": "Chili step 2" },
-      { "src": "/recipes_images/chili/chili_3.jpg", "alt": "Chili step 3" }
+      { "src": "/recipes_images/chili/chili_1.png", "alt": "Chili step 1" },
+      { "src": "/recipes_images/chili/chili_2.png", "alt": "Chili step 2" },
+      { "src": "/recipes_images/chili/chili_3.png", "alt": "Chili step 3" }
     ]
   },
   {

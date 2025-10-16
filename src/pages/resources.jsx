@@ -30,16 +30,14 @@ export default function Resources() {
             />
           </div>
           <div className={styles.textOverlayMiddle}>
-            <h2>Resources</h2>
-          </div>
-          <div>
-
-          
+            <h2><a href="/resources/sites">Sites</a>  |   <a href="/resources/references">References</a></h2>
           </div>
         </main>
     </div>
     {/* Intro / body */}
           <section className={styles.resourcesIntro}>
+            <h1>Resources</h1>
+            <br />
             <p>
               The foods that define a city’s culinary landscape speak to its histories, cultures,
               ecological environments, politics and economics. The El Paso–Ciudad Juárez area has
@@ -51,13 +49,13 @@ export default function Resources() {
             </p>
 
             <p>
-              <strong><u>Sites</u></strong> provide information on diverse organizations within the El Paso del
+              <strong><u><a href="/resources/sites">Sites</a></u></strong> provide information on diverse organizations within the El Paso del
               Norte area where knowledge from agricultural practices, general information related to the
               diverse aspects of food culture, to where food can be obtained.
             </p>
 
             <p>
-              <strong><u>References</u></strong> provide a list—mostly but not limited to—books, journals, articles,
+              <strong><u><a href="/resources/references">References</a></u></strong> provide a list—mostly but not limited to—books, journals, articles,
               and documentaries about El Paso’s area that serve as a place to begin exploring food’s
               far-reaching ways of shaping the landscape of a community. Downloads provided when available.
             </p>
