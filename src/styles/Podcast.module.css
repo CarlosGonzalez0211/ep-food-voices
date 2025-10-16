@@ -95,3 +95,15 @@
 .ctaRow { margin-top: 0.75rem; }
 .detailLink { color: #1d4ed8; font-weight: 600; text-decoration: none; }
 .detailLink:hover { text-decoration: underline; }
+
+/* Intro blurb under hero */
+.intro {
+  max-width: 900px;
+  margin: 1.75rem auto 2rem;
+  padding: 0 1rem;
+}
+.intro p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #1f2937; /* slate-800 */
+}

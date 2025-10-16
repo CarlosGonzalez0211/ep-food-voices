@@ -42,6 +42,17 @@ export default function Podcasts() {
           </div>
         </main>
       </div>
+      <section className={styles.intro}>
+        <p>
+          El Paso Food Voices podcast provides a window into the extensive role
+          food plays in people’s lives. Food embodies symbolic, metaphorical,
+          and political cultural and social practices. This podcast series
+          shows how food practices captures a city&apos;s history beyond
+          borders. Both guest and host/ess are members of the El Paso
+          community. Each host/hostess has developed the episode’s topic and
+          written a short analysis based on the central theme discussed.
+        </p>
+      </section>
 
       {/* Episode list (image left, details right) */}
       <section className={styles.listContainer}>

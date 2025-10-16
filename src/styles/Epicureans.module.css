@@ -1,0 +1,131 @@
+/* -------- PAGE/HERO (reused) -------- */
+.page { width: 100%; }
+.main { width: 100%; }
+
+.heroContainer {
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+/* slight darken for readability */
+.heroContainer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  pointer-events: none;
+}
+
+.heroBg {
+  width: 100%;
+  height: auto;
+  display: block;
+  align-items: center;
+}
+
+/* ===== EPFV LOGO (same behavior as index) ===== */
+.heroOverlay {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 80%;
+  z-index: 1; /* below text overlay, above darken layer */
+}
+
+/* -------- EPICUREANS OVERLAY -------- */
+.epiOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2; /* ensure text/Φ sits above the logo */
+  display: flex;
+  align-items: center;
+}
+
+.epiPhi {
+  position: absolute;
+  left: clamp(12px, 6vw, 80px);
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 800;
+  font-size: clamp(6rem, 22vw, 18rem);
+  line-height: 1;
+  color: #fff;
+  opacity: 0.92;
+  text-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  pointer-events: none;
+}
+
+.epiContent {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: clamp(12px, 2vw, 24px);
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  margin-left: clamp(140px, 24vw, 360px); /* avoid overlapping the Φ */
+}
+
+.epiTitle {
+  margin: 0 0 0.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  font-size: clamp(2.8rem, 10vw, 8rem);
+  line-height: 1.05;
+}
+
+.epiLine {
+  margin: 0.5rem 0;
+  font-size: clamp(1.05rem, 2.2vw, 2rem);
+  line-height: 1.4;
+}
+
+.epiLine strong {
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .epiPhi { display: none; }
+  .epiContent { margin-left: 0; }
+}
+
+/* -------- INTRO SECTION BELOW HERO -------- */
+.introSection {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
+  color: #0f172a; /* slate-950-ish */
+}
+
+.introHeading {
+  margin: 0 0 1rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+  font-weight: 700;
+}
+
+.introSection p {
+  margin: 0 0 1.1rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.introQuote {
+  font-style: italic;
+  color: #1f2937; /* slate-800 */
+}
+
+.introContact a {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.footnote {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: #374151; /* slate-700 */
+}

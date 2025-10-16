@@ -1,0 +1,67 @@
+/* -------- PAGE/HERO -------- */
+.page { width: 100%; }
+.main { width: 100%; }
+
+.heroContainer { position: relative; width: 100%; }
+.heroBg { width: 100%; height: auto; display: block; }
+
+.textOverlayMiddle {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  padding: 0 1rem;
+  width: 100%;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.05;
+}
+
+
+/* Resources intro body under the hero */
+.resourcesIntro {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
+}
+
+.resourcesIntro p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #111827; /* slate-900-ish */
+  margin: 0 0 1.25rem;
+}
+
+.resourcesIntro em {
+  font-style: italic;
+}
+
+
+.linkListSection {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
+}
+
+.linkList {
+  list-style: disc;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 1rem;
+  line-height: 1.8;
+  color: #111827;
+}
+
+.linkList a {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.linkList a:hover {
+  text-decoration-thickness: 2px;
+}
