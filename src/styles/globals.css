@@ -33,3 +33,8 @@ a {
     color-scheme: dark;
   }
 }
+
+input {
+  color: white;
+  background: transparent;
+}

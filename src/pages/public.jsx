@@ -10,7 +10,7 @@ import stories from "../data/stories.json";
 
 import { useState } from "react";
 
-export default function Stories() {
+export default function PublicKitchen() {
   const [inputValue, setInputValue] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -26,7 +26,7 @@ export default function Stories() {
   return (
     <>
       <Head>
-        <title>Stories</title>
+        <title>Public Kitchen</title>
         <meta name="description" content="All stories from El Paso Food Voices" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -40,7 +40,7 @@ export default function Stories() {
           {/* Hero Section */}
           <div className={styles.heroContainer}>
             <Image
-              src="/stories_images/stories_background.jpg"
+              src="/stories_images/private_background.jpg"
               alt="Background"
               className={styles.heroBg}
               width={1000}
@@ -49,26 +49,8 @@ export default function Stories() {
 
             {/* Middle Title */}
             <div className={styles.textOverlayMiddle}>
-              <h2>Stories</h2>
+              <h2>Public Kitchen</h2>
             </div>
-
-            {/* Left Text Box - Private Kitchen */}
-            <Link href="/private" className={styles.textOverlayLeft}>
-              <h3>Private Kitchen</h3>
-              <p>
-                Private kitchens group people’s stories whose passion for food is not
-                linked to how they make a livelihood.
-              </p>
-            </Link>
-
-            {/* Right Text Box - Public Kitchen */}
-            <Link href="/public" className={styles.textOverlayRight}>
-              <h3>Public Kitchen</h3>
-              <p>
-                Public kitchens are more directly intertwined with food systems—industrial,
-                local, organic, sustainable.
-              </p>
-            </Link>
           </div>
 
           {/* Search Bar */}

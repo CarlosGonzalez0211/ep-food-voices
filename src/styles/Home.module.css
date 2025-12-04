@@ -467,3 +467,95 @@
   }
 }
 
+/* LEFT + RIGHT STORY TYPE OVERLAYS (for Stories hero) */
+.textOverlayLeft,
+.textOverlayRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  z-index: 2;
+  text-decoration: none;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.textOverlayLeft:hover,
+.textOverlayRight:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.textOverlayLeft {
+  left: 5%;
+}
+
+.textOverlayRight {
+  right: 5%;
+}
+
+.textOverlayLeft h3,
+.textOverlayRight h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.textOverlayLeft p,
+.textOverlayRight p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Mobile stacking */
+@media (max-width: 768px) {
+  .textOverlayLeft,
+  .textOverlayRight {
+    width: 80%;
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, -50%);
+    top: auto;
+    bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .textOverlayRight {
+    bottom: 1rem;
+  }
+
+  .textOverlayLeft {
+    bottom: 5rem;
+  }
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.searchInput {
+  width: 60%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.searchButton:hover {
+  background-color: #555;
+}
+
+.searchInput:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* slightly deeper on focus */
+}
