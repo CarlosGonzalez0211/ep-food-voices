@@ -1,0 +1,225 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main {
+  width: 100%;
+}
+
+.article {
+  width: 100%;
+  background: #fff;
+}
+
+.heroImage {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.heroImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #1d4ed8;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.author {
+  margin: 0 0 2.5rem;
+  font-size: 1.1rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+.body {
+  color: #1f2937;
+  line-height: 1.8;
+}
+
+.body p {
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+}
+
+.body p:last-child {
+  margin-bottom: 2.5rem;
+}
+
+.body a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.body a:hover {
+  color: #2563eb;
+}
+
+.body em {
+  font-style: italic;
+}
+
+.body strong {
+  font-weight: 700;
+}
+
+.body ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+  list-style-type: disc;
+}
+
+.body ul li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.imageContainer {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contentImg {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imageCaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-style: italic;
+  text-align: center;
+}
+
+.worksSection {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.worksSection h3 {
+  margin: 0 0 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.worksSection p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.worksSection p:last-child {
+  margin-bottom: 0;
+}
+
+.date {
+  margin: 0 0 2.5rem;
+  font-size: 0.95rem;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.poemSection {
+  margin: 2rem 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.poemSection p {
+  margin: 1.5rem 0;
+  line-height: 1.9;
+  color: #1f2937;
+}
+
+.body h2 {
+  margin: 2.5rem 0 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 1.75rem);
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.body h3 {
+  margin: 2rem 0 1rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-left: 4px solid #1d4ed8;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.acknowledgment {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: #fef3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #78350f;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+
+  .body p,
+  .body ul li {
+    font-size: 1rem;
+  }
+
+  .heroImage {
+    max-height: 300px;
+  }
+}

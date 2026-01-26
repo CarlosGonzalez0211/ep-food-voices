@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "@/styles/Epicureans.module.css";
 
 import Header from "../components/Header";
@@ -103,6 +104,218 @@ export default function Epicureans() {
           * Worth, Sarah and David, Ben. “Epicurus, Pleasure, and the Twenty–First–Century Diet.”
           <em> The Journal of Aesthetic Education</em>, Vol. 55, No. 3 (Fall 2021): 59–70.
         </p>
+      </section>
+
+      {/* Featured Card Section */}
+      <section className={styles.featuredSection}>
+        <Link href="/epicureans/los-angeles-abuela-project" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/los_angeles/los_angeles_cover.jpg"
+                alt="El Paso Food Voices Inspires Los Angeles Abuela Project"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                El Paso Food Voices Inspires Los Angeles Abuela Project
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/my-father-food-and-memories" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/my_father/my_father_cover.jpg"
+                alt="My Father, Food and Memories"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                My Father, Food and Memories
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/life-on-ranch-terrenates" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/life_ranch/life_ranch_cover.jpg"
+                alt="Life on Ranch Terrenates, the Story of an Immigrant"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                Life on Ranch Terrenates, the Story of an Immigrant
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/elements-that-make-a-cooks-soul" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/cooks_soul/cooks_soul_cover.jpg"
+                alt="The Elements that Make a Cook's Soul"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                The Elements that Make a Cook's Soul
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/my-inner-child-conscious-eating" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/inner_child/inner_child_cover.jpg"
+                alt="My Inner Child and Finding Purpose in Conscious Eating"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                My Inner Child and Finding Purpose in Conscious Eating
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/acknowledge-the-gordita" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/gordita/gordita_cover.jpeg"
+                alt="We Need to Acknowledge the Gordita!"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                We Need to Acknowledge the Gordita!
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/reflections-culinary-subjectivities" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/reflections_culinary/reflections_culinary_cover.jpg"
+                alt="Reflections on My Culinary Subjectivities"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                Reflections on My Culinary Subjectivities
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/shaking-up-christmas-canon" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/shaking_up/shaking_up_cover.jpg"
+                alt="Shaking Up the Christmas Canon"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                Shaking Up the Christmas Canon
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/rice-stories-of-the-season" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/rice_stories/rice_stories_cover.jpg"
+                alt="Rice: The Stories of the Season"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                Rice: The Stories of the Season
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/the-process-of-identity" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/pocess_identity/process_identity_cover.jpeg"
+                alt="The Process of Identity"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                The Process of Identity
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/epicureans/palate-memories-nepal-to-el-paso" className={styles.cardLink}>
+          <div className={styles.card}>
+            <div className={styles.cardImage}>
+              <Image
+                src="/epicureans_images/palate_memories/palate_memories_cover.jpg"
+                alt="Palate Memories from Nepal to El Paso"
+                width={800}
+                height={450}
+                className={styles.cardImg}
+              />
+            </div>
+            <div className={styles.cardContent}>
+              <h2 className={styles.cardTitle}>
+                Palate Memories from Nepal to El Paso
+              </h2>
+            </div>
+          </div>
+        </Link>
       </section>
 
       <Footer />

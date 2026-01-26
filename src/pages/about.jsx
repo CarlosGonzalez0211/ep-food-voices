@@ -83,7 +83,9 @@ export default function About() {
                   support received by UTEP's College of Liberal Arts' Community Engagement Grant.
                 </p>
 
-                <article className={styles.teamCard}>
+                {/* Featured Founder Section */}
+                <div className={styles.featuredTeamMember}>
+                  <article className={styles.teamCard}>
                   <div className={styles.cardImageWrapper}>
                     <Image
                       src="/about_images/meredith.jpg"
@@ -109,6 +111,10 @@ export default function About() {
                     </p>
                   </div>
                 </article>
+                </div>
+
+                {/* Collaborators Grid - 2 per row */}
+                <div className={styles.teamGrid}>
                 <article className={styles.teamCard}>
                   <div className={styles.cardImageWrapper}>
                     <Image
@@ -216,8 +222,9 @@ export default function About() {
                     </p>
                   </div>
                 </article>
+                </div>
 
-                <section>
+                <section className={styles.specialThanksSection}>
                   <strong>Special Thanks:</strong>
                   <p>Steve Varela and UTEP's Creatuve Studios</p>
                   <p>Liduvina Velez</p>

@@ -259,6 +259,101 @@
   line-height: 1.6;
 }
 
+/* Featured Team Member - Centered Founder Section */
+.featuredTeamMember {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.featuredTeamMember .teamCard {
+  max-width: 900px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.featuredTeamMember .cardImageWrapper {
+  margin-bottom: 1rem;
+}
+
+.featuredTeamMember .cardImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 0.75rem;
+}
+
+.featuredTeamMember .cardText {
+  max-width: 100%;
+}
+
+/* Team Grid - 2 columns for other collaborators */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsive - 1 column on smaller screens */
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredTeamMember .teamCard {
+    flex-direction: column;
+  }
+
+  .teamCard {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cardImageWrapper {
+    width: 100%;
+  }
+}
+
+/* Special Thanks Section - Centered */
+.specialThanksSection {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.specialThanksSection strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.specialThanksSection p {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.specialThanksSection a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.specialThanksSection a:hover {
+  color: #1d4ed8;
+}
+
 .cardText a {
   color: #0070f3;
   text-decoration: underline;
@@ -268,11 +363,12 @@
 /* ===== Responsive Stories Card Grid (Improved) ===== */
 .storiesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, auto));
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  justify-content: start;
 }
 
 .storyCard {
@@ -283,7 +379,8 @@
   transition: transform 0.2s ease;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
+  max-width: 400px;
 }
 
 .storyCard:hover {
@@ -321,14 +418,15 @@
 .cardLink {
   margin-top: auto;
   font-weight: 600;
-  color: #0070f3;
+  color: #3b82f6;
   text-decoration: none;
   display: inline-block;
   transition: color 0.2s;
 }
 
 .cardLink:hover {
-  color: #0050c0;
+  color: #2563eb;
+  text-decoration: underline;
 }
 
 /* === INDIVIDUAL STORY PAGE === */
@@ -383,7 +481,8 @@
 
 .videoWrapper iframe {
   width: 100%;
-  height: 360px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   border: none;
   border-radius: 8px;
 }
@@ -398,6 +497,8 @@
 
 .video-frame {
   width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
   max-width: 720px;
   height: 505px;
   border: none;
@@ -535,27 +636,74 @@
 .searchContainer {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
 .searchInput {
-  width: 60%;
+  flex: 1;
+  min-width: 250px;
   max-width: 400px;
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1.2rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 2px solid #e0e0e0;
   border-radius: 8px;
   background-color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  color: black;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.searchButton:hover {
-  background-color: #555;
+.searchInput::placeholder {
+  color: #999;
+}
+
+.searchInput:hover {
+  border-color: #bbb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .searchInput:focus {
   outline: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* slightly deeper on focus */
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1), 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.searchButton {
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+.searchButton:hover {
+  background-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transform: translateY(-1px);
+}
+
+.searchButton:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .searchContainer {
+    flex-direction: column;
+  }
+
+  .searchInput {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .searchButton {
+    width: 100%;
+  }
 }

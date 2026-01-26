@@ -1,0 +1,168 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f8fafc, #fff);
+}
+
+.main {
+  width: 100%;
+}
+
+.article {
+  width: 100%;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #1d4ed8;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  color: #64748b;
+  font-style: italic;
+  text-align: center;
+}
+
+.heroImageContainer {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.heroContentImg {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.author {
+  margin: 0 0 2.5rem;
+  font-size: 1.1rem;
+  color: #64748b;
+  font-style: italic;
+  text-align: center;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #cbd5e1, transparent);
+  margin: 3rem auto;
+}
+
+.poemSection {
+  margin: 3rem 0;
+}
+
+.poemTitle {
+  margin: 0 0 2rem;
+  font-size: clamp(1.5rem, 4vw, 1.75rem);
+  font-weight: 600;
+  color: #1e293b;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.poem {
+  color: #1f2937;
+  line-height: 1.8;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.stanza {
+  margin: 0 0 1.75rem;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+
+.stanza:last-child {
+  margin-bottom: 0;
+}
+
+.signature {
+  margin: 2rem 0 0;
+  font-size: 1rem;
+  font-style: italic;
+  color: #475569;
+  text-align: right;
+  line-height: 1.6;
+}
+
+.footnote {
+  margin: 2rem 0 0;
+  font-size: 0.95rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+.imageContainer {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.contentImg {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+
+  .poemTitle {
+    font-size: 1.5rem;
+  }
+
+  .stanza {
+    font-size: 1rem;
+  }
+
+  .divider {
+    margin: 2rem auto;
+  }
+}
