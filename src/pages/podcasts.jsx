@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import styles from "@/styles/Podcast.module.css";
+import homeStyles from "@/styles/Home.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -10,6 +12,18 @@ import podcasts from "../data/podcasts.json";
 import PodcastCard from "@/components/PodcastCard";
 
 export default function Podcasts() {
+  const [inputValue, setInputValue] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredPodcasts = podcasts.filter((podcast) =>
+    podcast.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    podcast.author.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const handleSearch = () => {
+    setSearchTerm(inputValue);
+  };
+
   return (
     <>
       <Head>
@@ -54,10 +68,24 @@ export default function Podcasts() {
         </p>
       </section>
 
+      {/* Search Bar */}
+      <div className={homeStyles.searchContainer}>
+        <input
+          type="text"
+          placeholder="Search by title or author..."
+          className={homeStyles.searchInput}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+        />
+        <button className={homeStyles.searchButton} onClick={handleSearch}>
+          Search
+        </button>
+      </div>
+
       {/* Episode list (image left, details right) */}
       <section className={styles.listContainer}>
-        {Array.isArray(podcasts) &&
-          podcasts.map((p) => <PodcastCard key={p.slug} podcast={p} />)}
+        {Array.isArray(filteredPodcasts) &&
+          filteredPodcasts.map((p) => <PodcastCard key={p.slug} podcast={p} />)}
       </section>
 
       {/* Footer */}

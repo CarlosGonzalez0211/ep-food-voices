@@ -35,6 +35,6 @@ a {
 }
 
 input {
-  color: white;
+  color: inherit;
   background: transparent;
 }
