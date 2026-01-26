@@ -311,7 +311,7 @@ export default function Epicureans() {
             </div>
             <div className={styles.cardContent}>
               <h2 className={styles.cardTitle}>
-                Palate Memories from Nepal to El Paso
+                Changes for tests
               </h2>
             </div>
           </div>
