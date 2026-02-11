@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.css";
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ScrollIndicator from '../components/ScrollIndicator';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
 
       {/* Header import */}
       <Header />
+      <ScrollIndicator />
 
       {/* Page Content */}
       <div className={`${styles.page}`}>
@@ -43,6 +45,21 @@ export default function Home() {
               <h2>Lived Through Food</h2>
             </div>
           </div>
+
+          {/* Latest Stories Section */}
+          <section className={styles.latestStoriesSection}>
+            <div className={styles.latestStoriesContainer}>
+              <h1 className={styles.latestStoriesTitle}>LATEST STORIES</h1>
+
+              <p className={styles.latestStoriesText}>
+                <strong>El Paso Food Voices (EPFV) is a city's story lived through food.</strong> It speaks to cross-cultural connections that define a city's culinary identity that is made up of a diverse population, a past with roots spreading in multiple directions, and a dynamic and ever-changing present. This collection, which includes recipes, is gathered from home cooks, professional chefs, restaurant owners, community educators, and others from across El Paso, Texas. <strong>EPFV</strong> invites viewers to consider what living histories are served on their plates and how our culinary actions of today influence the kinds of living histories future generations will experience.
+              </p>
+
+              <p className={styles.latestStoriesText}>
+                <strong>The foods that define</strong> a city's story lived through food speaks to its histories, cultures, ecological environments, politics and economics. Recipes are always more than "how to" instructions. Recipes are stories. They reveal how and why we remember certain ingredients, techniques, and ways of serving. Food stories archive the flavors and textures of our lived experiences, of the places we have lived, of histories we share with family, friends and strangers. These stories bring to life El Paso's mosaic of flavors.
+              </p>
+            </div>
+          </section>
 
           <section className={styles.imageTextSection}>
             <div className={styles.imageTextContainer}>

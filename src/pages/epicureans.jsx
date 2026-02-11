@@ -1,12 +1,114 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useRef } from "react";
 import styles from "@/styles/Epicureans.module.css";
+import homeStyles from "@/styles/Home.module.css";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Pagination from "../components/Pagination";
 
 export default function Epicureans() {
+  const [inputValue, setInputValue] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const cardsRef = useRef(null);
+
+  // Array of all blog posts
+  const blogPosts = [
+    {
+      slug: "los-angeles-abuela-project",
+      image: "/epicureans_images/los_angeles/los_angeles_cover.jpg",
+      title: "El Paso Food Voices Inspires Los Angeles Abuela Project",
+      author: "Sarah Portnoy",
+    },
+    {
+      slug: "my-father-food-and-memories",
+      image: "/epicureans_images/my_father/my_father_cover.jpg",
+      title: "My Father, Food and Memories",
+      author: "Areyda Madrid",
+    },
+    {
+      slug: "life-on-ranch-terrenates",
+      image: "/epicureans_images/life_ranch/life_ranch_cover.jpg",
+      title: "Life on Ranch Terrenates, the Story of an Immigrant",
+      author: "Ana Berry",
+    },
+    {
+      slug: "elements-that-make-a-cooks-soul",
+      image: "/epicureans_images/cooks_soul/cooks_soul_cover.jpg",
+      title: "The Elements that Make a Cook's Soul",
+      author: "Sangay Choden",
+    },
+    {
+      slug: "my-inner-child-conscious-eating",
+      image: "/epicureans_images/inner_child/inner_child_cover.jpg",
+      title: "My Inner Child and Finding Purpose in Conscious Eating",
+      author: "Priya Anderson",
+    },
+    {
+      slug: "acknowledge-the-gordita",
+      image: "/epicureans_images/gordita/gordita_cover.jpeg",
+      title: "We Need to Acknowledge the Gordita!",
+      author: "Tomas Maldonado",
+    },
+    {
+      slug: "reflections-culinary-subjectivities",
+      image: "/epicureans_images/reflections_culinary/reflections_culinary_cover.jpg",
+      title: "Reflections on My Culinary Subjectivities",
+      author: "Purna Chandra Bhusal",
+    },
+    {
+      slug: "shaking-up-christmas-canon",
+      image: "/epicureans_images/shaking_up/shaking_up_cover.jpg",
+      title: "Shaking Up the Christmas Canon",
+      author: "Anthony J. Diaz",
+    },
+    {
+      slug: "rice-stories-of-the-season",
+      image: "/epicureans_images/rice_stories/rice_stories_cover.jpg",
+      title: "Rice: The Stories of the Season",
+      author: "Gabriel Arellano",
+    },
+    {
+      slug: "the-process-of-identity",
+      image: "/epicureans_images/pocess_identity/process_identity_cover.jpeg",
+      title: "The Process of Identity",
+      author: "Antonio Valerio Muñoz",
+    },
+    {
+      slug: "palate-memories-nepal-to-el-paso",
+      image: "/epicureans_images/palate_memories/palate_memories_cover.jpg",
+      title: "Changes for tests",
+      author: "Purna Chandra Bhusal",
+    },
+  ];
+
+  const filteredPosts = blogPosts.filter((post) =>
+    post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    (post.author || "").toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const handleSearch = () => {
+    setSearchTerm(inputValue);
+    setCurrentPage(1); // Reset to page 1 when searching
+  };
+
+  // Pagination logic
+  const itemsPerPage = 6;
+  const totalPages = Math.ceil(filteredPosts.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentPosts = filteredPosts.slice(startIndex, endIndex);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    if (cardsRef.current) {
+      cardsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <>
       <Head>
@@ -45,20 +147,22 @@ export default function Epicureans() {
 
             {/* Overlay: Φ + title + definitions */}
             <div className={styles.epiOverlay}>
-              <div className={styles.epiPhi}>Φ</div>
+              <div className={styles.epiGroup}>
+                <div className={styles.epiPhi}>Φ</div>
 
-              <div className={styles.epiContent}>
-                <h1 className={styles.epiTitle}>Epicureans</h1>
-                <p className={styles.epiLine}>
-                  <strong>Epicurus:</strong> The “belly-centered” ancient Greek philosopher.
-                </p>
-                <p className={styles.epiLine}>
-                  <strong>Epicureanism:</strong> “The beginning and the root to all good is the
-                  pleasure of the stomach; even wisdom and culture must be referred to this.”
-                </p>
-                <p className={styles.epiLine}>
-                  <strong>Epicureans:</strong> Disciples of Epicurus.
-                </p>
+                <div className={styles.epiContent}>
+                  <h1 className={styles.epiTitle}>Epicureans</h1>
+                  <p className={styles.epiLine}>
+                    <strong>Epicurus:</strong> The “belly-centered” ancient Greek philosopher.
+                  </p>
+                  <p className={styles.epiLine}>
+                    <strong>Epicureanism:</strong> “The beginning and the root to all good is the
+                    pleasure of the stomach; even wisdom and culture must be referred to this.”
+                  </p>
+                  <p className={styles.epiLine}>
+                    <strong>Epicureans:</strong> Disciples of Epicurus.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -106,217 +210,65 @@ export default function Epicureans() {
         </p>
       </section>
 
+      {/* Search Bar */}
+      <div className={homeStyles.searchContainer}>
+        <input
+          type="text"
+          placeholder="Search by title or author..."
+          className={homeStyles.searchInput}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+        />
+        <button className={homeStyles.searchButton} onClick={handleSearch}>
+          Search
+        </button>
+      </div>
+
       {/* Featured Card Section */}
-      <section className={styles.featuredSection}>
-        <Link href="/epicureans/los-angeles-abuela-project" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/los_angeles/los_angeles_cover.jpg"
-                alt="El Paso Food Voices Inspires Los Angeles Abuela Project"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
+      <section ref={cardsRef} className={styles.featuredSection}>
+        {currentPosts.map((post) => (
+          <Link key={post.slug} href={`/epicureans/${post.slug}`} className={styles.cardLink}>
+            <div className={styles.card}>
+              <div className={styles.cardImage}>
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  width={800}
+                  height={450}
+                  className={styles.cardImg}
+                />
+              </div>
+              <div className={styles.cardContent}>
+                <h2 className={styles.cardTitle}>
+                  {post.title}
+                </h2>
+              </div>
             </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                El Paso Food Voices Inspires Los Angeles Abuela Project
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/my-father-food-and-memories" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/my_father/my_father_cover.jpg"
-                alt="My Father, Food and Memories"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                My Father, Food and Memories
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/life-on-ranch-terrenates" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/life_ranch/life_ranch_cover.jpg"
-                alt="Life on Ranch Terrenates, the Story of an Immigrant"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                Life on Ranch Terrenates, the Story of an Immigrant
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/elements-that-make-a-cooks-soul" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/cooks_soul/cooks_soul_cover.jpg"
-                alt="The Elements that Make a Cook's Soul"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                The Elements that Make a Cook's Soul
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/my-inner-child-conscious-eating" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/inner_child/inner_child_cover.jpg"
-                alt="My Inner Child and Finding Purpose in Conscious Eating"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                My Inner Child and Finding Purpose in Conscious Eating
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/acknowledge-the-gordita" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/gordita/gordita_cover.jpeg"
-                alt="We Need to Acknowledge the Gordita!"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                We Need to Acknowledge the Gordita!
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/reflections-culinary-subjectivities" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/reflections_culinary/reflections_culinary_cover.jpg"
-                alt="Reflections on My Culinary Subjectivities"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                Reflections on My Culinary Subjectivities
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/shaking-up-christmas-canon" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/shaking_up/shaking_up_cover.jpg"
-                alt="Shaking Up the Christmas Canon"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                Shaking Up the Christmas Canon
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/rice-stories-of-the-season" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/rice_stories/rice_stories_cover.jpg"
-                alt="Rice: The Stories of the Season"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                Rice: The Stories of the Season
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/the-process-of-identity" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/pocess_identity/process_identity_cover.jpeg"
-                alt="The Process of Identity"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                The Process of Identity
-              </h2>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/epicureans/palate-memories-nepal-to-el-paso" className={styles.cardLink}>
-          <div className={styles.card}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/epicureans_images/palate_memories/palate_memories_cover.jpg"
-                alt="Palate Memories from Nepal to El Paso"
-                width={800}
-                height={450}
-                className={styles.cardImg}
-              />
-            </div>
-            <div className={styles.cardContent}>
-              <h2 className={styles.cardTitle}>
-                Changes for tests
-              </h2>
-            </div>
-          </div>
-        </Link>
+          </Link>
+        ))}
       </section>
+
+      {searchTerm.trim() && currentPosts.length === 0 && (
+        <div className={homeStyles.emptyState}>
+          <h4 className={homeStyles.emptyStateTitle}>No Epicureans posts found</h4>
+          <p className={homeStyles.emptyStateBody}>
+            We couldn’t find any matches for{" "}
+            <span className={homeStyles.emptyStateQuery}>
+              {`"${searchTerm}"`}
+            </span>
+            . Try a different title or author.
+          </p>
+        </div>
+      )}
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
+      )}
 
       <Footer />
     </>

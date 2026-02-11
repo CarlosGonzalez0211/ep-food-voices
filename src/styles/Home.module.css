@@ -7,7 +7,8 @@
   margin-left: -50vw;           /* full-bleed trick when inside centered wrappers */
   margin-right: -50vw;
 
-  height: min(90vh, 900px);     /* tall like the mock; adjust as needed */
+  height: 100vh;
+  height: 100svh;
   z-index: 0;
   overflow: hidden;
 }
@@ -41,15 +42,18 @@
 .heroContainer {
   position: relative;
   width: 100%;
-  height: auto; /* adjust if you want fixed height */
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
   align-items: center;
 }
 
 .heroBg {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   align-items: center;
+  object-fit: cover;
 }
 
 .heroOverlay {
@@ -57,8 +61,15 @@
   top: 15%;      /* vertical positioning */
   left: 50%;     /* horizontal positioning */
   transform: translate(-50%, -50%); /* perfect centering */
-  width: auto;   /* or set a % if you want scaling */
-  max-width: 80%;
+  width: clamp(220px, 70vw, 820px);
+  height: auto;
+  max-width: 90%;
+}
+@media (max-width: 768px) {
+  .heroOverlay {
+    top: 12%;
+    width: clamp(200px, 88vw, 560px);
+  }
 }
 
 /* Middle big line */
@@ -82,20 +93,54 @@
 }
 
 /* ---- "Latest Stories" section ---- */
+.latestStoriesSection {
+  background: #f5f6f7;
+  padding: clamp(48px, 8vw, 96px) 24px;
+}
+
+.latestStoriesContainer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.latestStoriesTitle {
+  text-align: center;
+  color: #1f2937;
+  font-family: Georgia, "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: clamp(32px, 5vw, 56px);
+  margin: 0 0 clamp(32px, 4vw, 48px);
+}
+
+.latestStoriesText {
+  color: #111827;
+  font-size: clamp(16px, 1.15vw, 18px);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.latestStoriesText strong {
+  font-weight: 700;
+}
+
+/* Old styles kept for backwards compatibility */
 .storiesSection {
-  background: #f5f6f7;             /* light gray bg; change to #fff if you prefer */
+  background: #f5f6f7;
   padding: clamp(48px, 8vw, 96px) 24px;
 }
 
 .storiesWrap {
-  max-width: 960px;                /* readable line length */
+  max-width: 960px;
   margin: 0 auto;
 }
 
 .storiesTitle {
   text-align: center;
-  color: #1f2937;                  /* gray-800 */
-  font-family: Georgia, "Times New Roman", serif; /* serif heading */
+  color: #1f2937;
+  font-family: Georgia, "Times New Roman", serif;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   line-height: 1.1;
@@ -105,7 +150,7 @@
 }
 
 .storiesBody {
-  color: #111827;                  /* gray-900 */
+  color: #111827;
   font-size: clamp(16px, 1.15vw, 18px);
   line-height: 1.8;
 }
@@ -125,89 +170,93 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 100px;
-  padding: 20px;
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
 }
 
 .imageTextContainer {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 100px;
-  padding: 20px;
   width: 100%;
-  align-self: stretch;
-  flex-grow: 1;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 3rem;
 }
 
 .imageTextContent {
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin-top: 20px;
+  gap: 3rem;
 }
 
 .imageTextColumns {
-  gap: 20px;
   display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem 0;
 }
 
 @media (max-width: 991px) {
   .imageTextColumns {
     flex-direction: column;
-    align-items: stretch;
-    gap: 0px;
+    gap: 1.5rem;
   }
 }
 
 .imageColumn {
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 50%;
-  margin-left: 0px;
+  flex: 0 0 45%;
+  max-width: 500px;
 }
 
 @media (max-width: 991px) {
   .imageColumn {
-    width: 100%;
-    margin-left: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
 .responsiveImage {
-  aspect-ratio: 1;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: center;
   width: 100%;
-  margin-top: 20px;
-  min-height: 20px;
-  min-width: 20px;
-  overflow: hidden;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.responsiveImage:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .textColumn {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 50%;
-  margin-left: 20px;
+  align-items: center;
 }
 
 @media (max-width: 991px) {
   .textColumn {
     width: 100%;
-    margin-left: 0;
   }
 }
 
 .textContent {
-  position: relative;
-  margin-top: 20px;
-  height: auto;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-style: italic;
+  color: #374151;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .textContent {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 
@@ -569,6 +618,10 @@
 }
 
 /* LEFT + RIGHT STORY TYPE OVERLAYS (for Stories hero) */
+.storyLinks {
+  position: static;
+}
+
 .textOverlayLeft,
 .textOverlayRight {
   position: absolute;
@@ -613,23 +666,24 @@
 
 /* Mobile stacking */
 @media (max-width: 768px) {
+  .storyLinks {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 2;
+  }
+
   .textOverlayLeft,
   .textOverlayRight {
-    width: 80%;
-    left: 50% !important;
-    right: auto !important;
-    transform: translate(-50%, -50%);
-    top: auto;
-    bottom: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .textOverlayRight {
-    bottom: 1rem;
-  }
-
-  .textOverlayLeft {
-    bottom: 5rem;
+    position: static;
+    width: min(92%, 520px);
+    transform: none;
+    margin: 0;
   }
 }
 
@@ -693,6 +747,36 @@
   transform: translateY(0);
 }
 
+.emptyState {
+  max-width: 720px;
+  margin: 1.75rem auto 3rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: #475569;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.emptyStateTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.emptyStateBody {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.emptyStateQuery {
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
 @media (max-width: 640px) {
   .searchContainer {
     flex-direction: column;
@@ -701,9 +785,13 @@
   .searchInput {
     width: 100%;
     min-width: auto;
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
   }
 
   .searchButton {
     width: 100%;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
   }
 }

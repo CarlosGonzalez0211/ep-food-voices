@@ -4,15 +4,19 @@ import styles from "@/styles/Home.module.css";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Pagination from "../components/Pagination";
+import ScrollIndicator from "../components/ScrollIndicator";
 
 import Link from "next/link";
 import stories from "../data/stories.json";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Stories() {
   const [inputValue, setInputValue] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const cardsRef = useRef(null);
 
   const filteredStories = stories.filter((story) =>
     story.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -21,6 +25,21 @@ export default function Stories() {
 
   const handleSearch = () => {
     setSearchTerm(inputValue);
+    setCurrentPage(1); // Reset to page 1 when searching
+  };
+
+  // Pagination logic
+  const itemsPerPage = 6;
+  const totalPages = Math.ceil(filteredStories.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentStories = filteredStories.slice(startIndex, endIndex);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    if (cardsRef.current) {
+      cardsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (
@@ -33,6 +52,7 @@ export default function Stories() {
 
       {/* Header import */}
       <Header />
+      <ScrollIndicator />
 
       {/* Page Content */}
       <div className={styles.page}>
@@ -52,23 +72,25 @@ export default function Stories() {
               <h2>Stories</h2>
             </div>
 
-            {/* Left Text Box - Private Kitchen */}
-            <Link href="/private" className={styles.textOverlayLeft}>
-              <h3>Private Kitchen</h3>
-              <p>
-                Private kitchens group people’s stories whose passion for food is not
-                linked to how they make a livelihood.
-              </p>
-            </Link>
+            <div className={styles.storyLinks}>
+              {/* Left Text Box - Private Kitchen */}
+              <Link href="/private" className={styles.textOverlayLeft}>
+                <h3>Private Kitchen</h3>
+                <p>
+                  Private kitchens group people’s stories whose passion for food is not
+                  linked to how they make a livelihood.
+                </p>
+              </Link>
 
-            {/* Right Text Box - Public Kitchen */}
-            <Link href="/public" className={styles.textOverlayRight}>
-              <h3>Public Kitchen</h3>
-              <p>
-                Public kitchens are more directly intertwined with food systems—industrial,
-                local, organic, sustainable.
-              </p>
-            </Link>
+              {/* Right Text Box - Public Kitchen */}
+              <Link href="/public" className={styles.textOverlayRight}>
+                <h3>Public Kitchen</h3>
+                <p>
+                  Public kitchens are more directly intertwined with food systems—industrial,
+                  local, organic, sustainable.
+                </p>
+              </Link>
+            </div>
           </div>
 
           {/* Search Bar */}
@@ -86,8 +108,8 @@ export default function Stories() {
           </div>
 
           {/* Responsive Grid of Story Cards */}
-          <div className={styles.storiesGrid}>
-            {filteredStories.map((story) => (
+          <div ref={cardsRef} className={styles.storiesGrid}>
+            {currentStories.map((story) => (
               <div key={story.slug} className={styles.storyCard}>
                 <Image
                   src={story.image}
@@ -106,6 +128,28 @@ export default function Stories() {
               </div>
             ))}
           </div>
+
+          {searchTerm.trim() && currentStories.length === 0 && (
+            <div className={styles.emptyState}>
+              <h4 className={styles.emptyStateTitle}>No stories found</h4>
+              <p className={styles.emptyStateBody}>
+                We couldn’t find any matches for{" "}
+                <span className={styles.emptyStateQuery}>
+                  {`"${searchTerm}"`}
+                </span>
+                . Try a different title or author.
+              </p>
+            </div>
+          )}
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+            />
+          )}
           </main>
         </div>
       <Footer />

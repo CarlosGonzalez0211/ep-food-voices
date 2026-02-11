@@ -20,6 +20,30 @@
   font-size: 1.1rem;
 }
 
+.menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.menuBar {
+  width: 22px;
+  height: 2px;
+  background: #0f172a;
+  display: block;
+}
+
+.linksOpen { }
+.linksClosed { }
+
 @media (max-width: 640px) {
   .links {
     gap: 1rem;
@@ -36,6 +60,42 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.25rem 1.5rem;
+    gap: 1rem;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+    transition: max-height 0.25s ease, opacity 0.2s ease;
+    overflow: hidden;
+  }
+
+  .linksClosed {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .linksOpen {
+    max-height: 420px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .logo {
     height: 40px;
   }

@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import styles from "@/styles/Podcast.module.css";
 import homeStyles from "@/styles/Home.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Pagination from "@/components/Pagination";
 
 import podcasts from "../data/podcasts.json";
 import PodcastCard from "@/components/PodcastCard";
@@ -14,6 +15,8 @@ import PodcastCard from "@/components/PodcastCard";
 export default function Podcasts() {
   const [inputValue, setInputValue] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const cardsRef = useRef(null);
 
   const filteredPodcasts = podcasts.filter((podcast) =>
     podcast.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -22,6 +25,21 @@ export default function Podcasts() {
 
   const handleSearch = () => {
     setSearchTerm(inputValue);
+    setCurrentPage(1); // Reset to page 1 when searching
+  };
+
+  // Pagination logic
+  const itemsPerPage = 6;
+  const totalPages = Math.ceil(filteredPodcasts.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentPodcasts = filteredPodcasts.slice(startIndex, endIndex);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    if (cardsRef.current) {
+      cardsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (
@@ -83,10 +101,32 @@ export default function Podcasts() {
       </div>
 
       {/* Episode list (image left, details right) */}
-      <section className={styles.listContainer}>
-        {Array.isArray(filteredPodcasts) &&
-          filteredPodcasts.map((p) => <PodcastCard key={p.slug} podcast={p} />)}
+      <section ref={cardsRef} className={styles.listContainer}>
+        {Array.isArray(currentPodcasts) &&
+          currentPodcasts.map((p) => <PodcastCard key={p.slug} podcast={p} />)}
       </section>
+
+      {searchTerm.trim() && currentPodcasts.length === 0 && (
+        <div className={homeStyles.emptyState}>
+          <h4 className={homeStyles.emptyStateTitle}>No podcasts found</h4>
+          <p className={homeStyles.emptyStateBody}>
+            We couldn’t find any matches for{" "}
+            <span className={homeStyles.emptyStateQuery}>
+              {`"${searchTerm}"`}
+            </span>
+            . Try a different title or author.
+          </p>
+        </div>
+      )}
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
+      )}
 
       {/* Footer */}
       <Footer />

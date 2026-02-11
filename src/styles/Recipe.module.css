@@ -1,8 +1,14 @@
 /* ========= PAGE SHELL / HERO for /recipes.jsx (grid page) ========= */
 .page { width: 100%; }
 .main { width: 100%; }
-.heroContainer { position: relative; width: 100%; }
-.heroBg { width: 100%; height: auto; display: block; }
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+.heroBg { width: 100%; height: 100%; display: block; object-fit: cover; }
 .textOverlayMiddle {
   position: absolute; z-index: 1; top: 50%; left: 50%;
   transform: translate(-50%, -50%);

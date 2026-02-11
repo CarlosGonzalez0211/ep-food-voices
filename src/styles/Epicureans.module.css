@@ -6,6 +6,9 @@
   position: relative;
   width: 100%;
   align-items: center;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
 }
 
 /* slight darken for readability */
@@ -19,9 +22,10 @@
 
 .heroBg {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   align-items: center;
+  object-fit: cover;
 }
 
 /* ===== EPFV LOGO (same behavior as index) ===== */
@@ -42,13 +46,19 @@
   z-index: 2; /* ensure text/Φ sits above the logo */
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.epiGroup {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 4vw, 48px);
+  width: min(1100px, 92%);
 }
 
 .epiPhi {
-  position: absolute;
-  left: clamp(12px, 6vw, 80px);
-  top: 50%;
-  transform: translateY(-50%);
+  position: static;
+  transform: none;
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 800;
   font-size: clamp(6rem, 22vw, 18rem);
@@ -60,12 +70,12 @@
 }
 
 .epiContent {
-  width: min(1100px, 92%);
-  margin: 0 auto;
+  width: 100%;
   padding: clamp(12px, 2vw, 24px);
   color: #fff;
   text-shadow: 0 2px 12px rgba(0,0,0,0.45);
-  margin-left: clamp(140px, 24vw, 360px); /* avoid overlapping the Φ */
+  margin-left: 0;
+  text-align: left;
 }
 
 .epiTitle {
@@ -91,7 +101,7 @@
 
 @media (max-width: 640px) {
   .epiPhi { display: none; }
-  .epiContent { margin-left: 0; }
+  .epiGroup { width: 92%; }
 }
 
 /* -------- INTRO SECTION BELOW HERO -------- */
