@@ -31,7 +31,7 @@
 .textOverlayMiddle,
 .textOverlayBottom {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   color: #fff;
   text-align: center;
   text-shadow: 0 2px 8px rgba(0,0,0,0.35); /* subtle glow for legibility */
@@ -46,6 +46,14 @@
   height: 100svh;
   overflow: hidden;
   align-items: center;
+}
+.heroContainer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .heroBg {
@@ -90,6 +98,50 @@
   transform: translateX(-50%); /* only center horizontally */
   font-size: clamp(1rem, 2.4vw, 2rem);
   line-height: 1.25;
+}
+
+/* Video carousel (simple horizontal scroller) */
+.videoCarousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.videoItem {
+  min-width: 320px;
+  max-width: 720px;
+  flex: 0 0 auto;
+}
+
+.video-frame {
+  width: 100%;
+  height: 360px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+}
+
+/* Related stories carousel */
+.relatedCarousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.relatedItem {
+  min-width: 220px;
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.relatedItem img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* ---- "Latest Stories" section ---- */
@@ -607,6 +659,86 @@
   object-fit: cover;
 }
 
+.storyPagerSection {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.storyPagerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.storyPagerLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.storyPagerPrev {
+  justify-content: flex-start;
+}
+
+.storyPagerNext {
+  justify-content: flex-end;
+}
+
+.storyPagerArrow {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 2rem;
+  line-height: 1;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.storyPagerCard {
+  flex: 1;
+  min-width: 0;
+}
+
+.storyPagerImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.storyPagerCaption {
+  margin: 0.75rem 0 0;
+  font-style: italic;
+  font-size: 1rem;
+  color: #1f2937;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.storyPagerLink:hover .storyPagerArrow {
+  background: #111827;
+  color: #ffffff;
+}
+
+.storyPagerPrev:hover .storyPagerArrow {
+  transform: translateX(-2px);
+}
+
+.storyPagerNext:hover .storyPagerArrow {
+  transform: translateX(2px);
+}
+
 @media (max-width: 768px) {
   .recipeDetails {
     grid-template-columns: 1fr;
@@ -614,6 +746,24 @@
 
   .videoWrapper iframe {
     height: 240px;
+  }
+
+  .storyPagerGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .storyPagerPrev,
+  .storyPagerNext {
+    justify-content: flex-start;
+  }
+
+  .storyPagerNext {
+    flex-direction: row-reverse;
+  }
+
+  .storyPagerImage {
+    height: 180px;
   }
 }
 

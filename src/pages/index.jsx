@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ScrollIndicator from '../components/ScrollIndicator';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,7 +17,6 @@ export default function Home() {
 
       {/* Header import */}
       <Header />
-      <ScrollIndicator />
 
       {/* Page Content */}
       <div className={`${styles.page}`}>
@@ -66,32 +65,36 @@ export default function Home() {
               <div className={styles.imageTextContent}>
                 <div className={styles.imageTextColumns}>
                   <div className={styles.imageColumn}>
-                    <Image
-                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
-                      alt=""
-                      className={styles.responsiveImage}
-                      width={800}
-                      height={800}
-                      unoptimized
-                    />
+                    <Link href="/stories/monsanto-is-bad">
+                      <Image
+                        src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
+                        alt=""
+                        className={styles.responsiveImage}
+                        width={800}
+                        height={800}
+                        unoptimized
+                      />
+                    </Link>
                   </div>
                   <div className={styles.textColumn}>
                     <div className={styles.textContent}>
-                      Monsato is bad.
-                    </div>
+                        "Monsanto is bad."
+                      </div>
                   </div>
                 </div>
 
                 <div className={styles.imageTextColumns}>
                   <div className={styles.imageColumn}>
-                    <Image
-                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F594dad2075fd46cfb1b0569525c91cf0"
-                      alt=""
-                      className={styles.responsiveImage}
-                      width={800}
-                      height={800}
-                      unoptimized
-                    />
+                    <Link href="/stories/machelle-wood">
+                      <Image
+                        src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F594dad2075fd46cfb1b0569525c91cf0"
+                        alt=""
+                        className={styles.responsiveImage}
+                        width={800}
+                        height={800}
+                        unoptimized
+                      />
+                    </Link>
                   </div>
                   <div className={styles.textColumn}>
                     <div className={styles.textContent}>
@@ -102,14 +105,16 @@ export default function Home() {
 
                 <div className={styles.imageTextColumns}>
                   <div className={styles.imageColumn}>
-                    <Image
-                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2Fba62e9019a3d4b5fa797b6d51999c057"
-                      alt=""
-                      className={styles.responsiveImage}
-                      width={800}
-                      height={800}
-                      unoptimized
-                    />
+                    <Link href="/stories/oso-good-culinary-program">
+                      <Image
+                        src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2Fba62e9019a3d4b5fa797b6d51999c057"
+                        alt=""
+                        className={styles.responsiveImage}
+                        width={800}
+                        height={800}
+                        unoptimized
+                      />
+                    </Link>
                   </div>
                   <div className={styles.textColumn}>
                     <div className={styles.textContent}>
@@ -120,14 +125,16 @@ export default function Home() {
 
                 <div className={styles.imageTextColumns}>
                   <div className={styles.imageColumn}>
-                    <Image
-                      src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2Fcbebf84fbf684a94ad0562adbd67a850"
-                      alt=""
-                      className={styles.responsiveImage}
-                      width={800}
-                      height={800}
-                      unoptimized
-                    />
+                    <Link href="/stories/chef-luis-borderland-story">
+                      <Image
+                        src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2Fcbebf84fbf684a94ad0562adbd67a850"
+                        alt=""
+                        className={styles.responsiveImage}
+                        width={800}
+                        height={800}
+                        unoptimized
+                      />
+                    </Link>
                   </div>
                   <div className={styles.textColumn}>
                     <div className={styles.textContent}>

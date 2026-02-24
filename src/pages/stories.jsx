@@ -5,7 +5,6 @@ import styles from "@/styles/Home.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Pagination from "../components/Pagination";
-import ScrollIndicator from "../components/ScrollIndicator";
 
 import Link from "next/link";
 import stories from "../data/stories.json";
@@ -52,7 +51,6 @@ export default function Stories() {
 
       {/* Header import */}
       <Header />
-      <ScrollIndicator />
 
       {/* Page Content */}
       <div className={styles.page}>

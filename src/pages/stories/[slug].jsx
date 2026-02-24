@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import stories from "@/data/stories.json";
 import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function StoryDetail() {
   const router = useRouter();
@@ -12,6 +14,10 @@ export default function StoryDetail() {
   const story = stories.find((s) => s.slug === slug);
 
   if (!story) return <p>Loading...</p>;
+
+  const currentIndex = stories.findIndex((s) => s.slug === story.slug);
+  const prevStory = stories[(currentIndex - 1 + stories.length) % stories.length];
+  const nextStory = stories[(currentIndex + 1) % stories.length];
 
   return (
     <>
@@ -23,6 +29,17 @@ export default function StoryDetail() {
       <Header />
 
       <div className={styles.storyContainer}>
+        {story.image && (
+          <div className={styles.storyHeroImage}>
+            <Image
+              src={story.image}
+              alt={story.title}
+              width={1200}
+              height={600}
+              className={styles.heroImg}
+            />
+          </div>
+        )}
         <p className={styles.storyQuote}>{story.quote}</p>
         <p className={styles.storyAuthor}>{story.author}</p>
         <p className={styles.photoCredit}>{story.photoCourtesy}</p>
@@ -32,30 +49,29 @@ export default function StoryDetail() {
         </div>
 
         {story.videos && story.videos.length > 0 && (
-          <section className="videos-section">
+          <section>
             <h2>Videos</h2>
-            {story.videos.map((video, index) => {
-              // Handle both youtu.be and full watch?v= URLs
-              let videoId = "";
-              if (video.embedUrl.includes("youtu.be/")) {
-                videoId = video.embedUrl.split("youtu.be/")[1];
-              } else if (video.embedUrl.includes("watch?v=")) {
-                videoId = video.embedUrl.split("watch?v=")[1];
-              }
+            <div className={styles.videoCarousel}>
+              {story.videos.map((video, index) => {
+                const url = video.embedUrl || video.url || "";
+                let videoId = "";
+                if (url.includes("youtu.be/")) videoId = url.split("youtu.be/")[1];
+                else if (url.includes("watch?v=")) videoId = url.split("watch?v=")[1];
 
-              return (
-                <div key={index} className="video-wrapper">
-                  <h3>{video.title}</h3>
-                  <iframe
-                    src={`https://www.youtube.com/embed/${videoId}`}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="video-frame"
-                  />
-                </div>
-              );
-            })}
+                return (
+                  <div key={index} className={styles.videoItem}>
+                    <h3>{video.title}</h3>
+                    <iframe
+                      src={`https://www.youtube.com/embed/${videoId}`}
+                      title={video.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className={styles["video-frame"]}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </section>
         )}
 
@@ -100,6 +116,74 @@ export default function StoryDetail() {
             </div>
           </div>
         )}
+
+        {/* Related stories carousel */}
+        <section>
+          <h3>Related Stories</h3>
+          <div className={styles.relatedCarousel}>
+            {stories
+              .filter((s) => s.slug !== slug)
+              .slice(0, 8)
+              .map((s) => (
+                <div key={s.slug} className={styles.relatedItem}>
+                  <Link href={`/stories/${s.slug}`}>
+                    <img src={s.image} alt={s.title} />
+                    <p><strong>{s.title}</strong></p>
+                  </Link>
+                </div>
+              ))}
+          </div>
+        </section>
+
+        <section className={styles.storyPagerSection} aria-label="Previous and next stories">
+          <div className={styles.storyPagerGrid}>
+            <Link
+              href={`/stories/${prevStory.slug}`}
+              className={`${styles.storyPagerLink} ${styles.storyPagerPrev}`}
+            >
+              <span className={styles.storyPagerArrow} aria-hidden="true">
+                &#8249;
+              </span>
+              <div className={styles.storyPagerCard}>
+                {prevStory.image && (
+                  <Image
+                    src={prevStory.image}
+                    alt={prevStory.title}
+                    width={460}
+                    height={280}
+                    className={styles.storyPagerImage}
+                  />
+                )}
+                <p className={styles.storyPagerCaption}>
+                  {prevStory.quote || prevStory.title}
+                </p>
+              </div>
+            </Link>
+
+            <Link
+              href={`/stories/${nextStory.slug}`}
+              className={`${styles.storyPagerLink} ${styles.storyPagerNext}`}
+            >
+              <div className={styles.storyPagerCard}>
+                {nextStory.image && (
+                  <Image
+                    src={nextStory.image}
+                    alt={nextStory.title}
+                    width={460}
+                    height={280}
+                    className={styles.storyPagerImage}
+                  />
+                )}
+                <p className={styles.storyPagerCaption}>
+                  {nextStory.quote || nextStory.title}
+                </p>
+              </div>
+              <span className={styles.storyPagerArrow} aria-hidden="true">
+                &#8250;
+              </span>
+            </Link>
+          </div>
+        </section>
       </div>
 
       <Footer />

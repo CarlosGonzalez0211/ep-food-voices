@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import styles from "@/styles/Recipe.module.css";
 import recipes from "@/data/recipes.json";
+import homeStyles from "@/styles/Home.module.css";
 
 function extractYouTubeId(url = "") {
   if (!url) return "";
@@ -95,19 +97,20 @@ export default function RecipeDetail({ recipe }) {
         {videos.length > 0 && (
           <section className={styles.section}>
             <h2>Videos</h2>
-            <div className={styles.videoList}>
+            <div className={homeStyles.videoCarousel}>
               {videos.map((v, idx) => {
                 const id = extractYouTubeId(v.embedUrl);
                 if (!id) return null;
+
                 return (
-                  <div key={idx} className={styles.videoWrapper}>
+                  <div key={idx} className={homeStyles.videoItem}>
                     {v.title && <h3 className={styles.videoTitle}>{v.title}</h3>}
                     <iframe
                       src={`https://www.youtube.com/embed/${id}`}
                       title={v.title || `Video ${idx + 1}`}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
-                      className={styles.videoFrame}
+                      className={homeStyles["video-frame"]}
                     />
                   </div>
                 );
@@ -135,6 +138,24 @@ export default function RecipeDetail({ recipe }) {
             </div>
           </section>
         )}
+
+        {/* Related recipes carousel */}
+        <section className={styles.section}>
+          <h3>Related Recipes</h3>
+          <div className={homeStyles.relatedCarousel}>
+            {recipes
+              .filter((r) => r.slug !== recipe.slug)
+              .slice(0, 8)
+              .map((r) => (
+                <div key={r.slug} className={homeStyles.relatedItem}>
+                  <Link href={`/recipes/${r.slug}`}>
+                    <img src={r.image} alt={r.title} />
+                    <p><strong>{r.title}</strong></p>
+                  </Link>
+                </div>
+              ))}
+          </div>
+        </section>
       </main>
 
       <Footer />

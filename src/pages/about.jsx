@@ -62,7 +62,7 @@ export default function About() {
                 <p>
                   El Paso Food Voices has been made possible through the EPCC-UTEP Humanities 
                   Collaborative, a grant supported by the Mellon Foundation and with the 
-                  collaboration of the University of Texas at El Paso’s Creative Studios. 
+                  collaboration of the University of Texas at El Paso’s InSPIRE. 
                   Further support has been provided by The Mimi Reisel Gladstein Endowment Grant, 
                   the NEH Digital Humanities Advancement Grant supporting Digital Mapping in Latinx 
                   Studies workshops, and California Humanities supporting the documentary “Voces de 
@@ -75,7 +75,7 @@ export default function About() {
                 <p>
                   El Paso Food Voices has been made possible through the EPCC-UTEP Humanities 
                   Collaborative, a grant supported by the Mellon Foundation and with the 
-                  collaboration of the University of Texas at El Paso’s Creative Studios. 
+                  collaboration of the University of Texas at El Paso’s InSPIRE. 
                   Further support has been provided by The Mimi Reisel Gladstein Endowment Grant, 
                   the NEH Digital Humanities Advancement Grant supporting Digital Mapping in Latinx 
                   Studies workshops, and California Humanities supporting the documentary “Voces de 
@@ -200,7 +200,7 @@ export default function About() {
                   <div className={styles.cardText}>
                     <h4>Carolina Valdez<br/><span>Graphic Designer (for EPFV "Logo")</span></h4>
                     <p>
-                      This logo was created by Carrolina Valdez, a UTEP student sharpening her graphic skills at UTEP’s Creative Studios. The logo takes its inspiration from Chicano artist Rolando Briseño’s Tablescapes.
+                      This logo was created by Carrolina Valdez, a UTEP student sharpening her graphic skills at UTEP’s InSPIRE. The logo takes its inspiration from Chicano artist Rolando Briseño’s Tablescapes.
                     </p>
                   </div>
                 </article>
@@ -225,14 +225,14 @@ export default function About() {
                 </div>
 
                 <section className={styles.specialThanksSection}>
-                  <strong>Special Thanks:</strong>
-                  <p>Steve Varela and UTEP's Creatuve Studios</p>
-                  <p>Liduvina Velez</p>
-                  <p>Lucy Fischer-West</p>
-                  <p>Skip Clark</p>
-                  <p>Julia and Sergio Lopez</p>
-                  <p>To read about how EPFV provides a model to achieve UTEP’s 2030 Strategic Plan, please visit<a href="/strategic_plan"> EPFV-UTEP’S 2030 STRATEGIC PLAN</a></p>
-
+                  <strong>Special Thanks</strong>
+                  <p><strong>InSPIRE:</strong> Steve Varela and the InSPIRE team</p>
+                  <p><strong>Web Developers:</strong> Carlos Gonzalez, Jonathan Hinojos</p>
+                  <p><strong>Web Designers:</strong> Marcos E. Soto, Carolina Valdez</p>
+                  <p><strong>Videography & Sound:</strong> Solomon Contreras</p>
+                  <p><strong>Editorial & Research:</strong> Meredith E. Abarca, Joshua I. Lopez</p>
+                  <p><strong>Additional Contributors:</strong> Liduvina Velez, Lucy Fischer-West, Skip Clark, Julia and Sergio Lopez</p>
+                  <p>To read about how EPFV provides a model to achieve UTEP’s 2030 Strategic Plan, please visit <a href="/strategic_plan">EPFV-UTEP’S 2030 STRATEGIC PLAN</a></p>
                 </section>
 
               </div>

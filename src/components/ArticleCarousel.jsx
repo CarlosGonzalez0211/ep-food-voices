@@ -32,6 +32,7 @@ export default function ArticleCarousel({ currentSlug }) {
                   width={300}
                   height={200}
                   className={styles.cardImg}
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <h3 className={styles.cardTitle}>{prevArticle.title}</h3>
@@ -54,6 +55,7 @@ export default function ArticleCarousel({ currentSlug }) {
                   width={300}
                   height={200}
                   className={styles.cardImg}
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <h3 className={styles.cardTitle}>{nextArticle.title}</h3>
