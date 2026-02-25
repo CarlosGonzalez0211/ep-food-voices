@@ -69,7 +69,7 @@ export default function Home() {
                       <Image
                         src="https://cdn.builder.io/api/v1/image/assets%2F6f41939355d9410ba9233715debe7bb0%2F7ab7fc37668c4a2abbded63a8af2b326"
                         alt=""
-                        className={styles.responsiveImage}
+                        className={`${styles.responsiveImage} ${styles.monsantoImage}`}
                         width={800}
                         height={800}
                         unoptimized
