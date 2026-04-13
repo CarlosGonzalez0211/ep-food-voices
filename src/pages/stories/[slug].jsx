@@ -126,7 +126,7 @@ export default function StoryDetail() {
               .slice(0, 8)
               .map((s) => (
                 <div key={s.slug} className={styles.relatedItem}>
-                  <Link href={`/stories/${s.slug}`}>
+                  <Link href={`/stories/${s.slug}`} className={styles.relatedLink}>
                     <img src={s.image} alt={s.title} />
                     <p><strong>{s.title}</strong></p>
                   </Link>

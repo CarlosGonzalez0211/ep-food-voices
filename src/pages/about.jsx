@@ -6,6 +6,101 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default function About() {
+  const technicalTeamSections = [
+    {
+      title: "Managers",
+      members: [
+        {
+          name: "Steve Varela",
+          role: "Manager",
+          image: "/about_images/steve-varela.jpg",
+          description:
+            "Project management and coordination support for the EPFV platform and its ongoing development work.",
+        },
+        {
+          name: "Jessica Duran",
+          role: "Manager",
+          image: "/about_images/Jessica_Duran copy.png",
+          description:
+            "Management support for technical coordination and delivery across the EPFV website team.",
+        },
+        {
+          name: "Janet Hill",
+          role: "Manager",
+          image: "/about_images/food_logo.png",
+          description:
+            "Management support contributing to the technical and organizational work behind the EPFV platform.",
+        },
+      ],
+    },
+    {
+      title: "Design",
+      members: [
+        {
+          name: "Mitsumasa Overstreet",
+          role: "Designer",
+          image: "/about_images/mitsu3.png",
+          description:
+            "Interface planning, visual direction, and user experience design for the EPFV website.",
+        },
+        {
+          name: "Marcos E. Soto",
+          role: "Designer",
+          image: "/about_images/marcos.jpg",
+          description:
+            "User interface and visual design support contributing to the look and usability of the EPFV platform.",
+        },
+        {
+          name: "Alexis LG",
+          role: "Designer",
+          image: "/about_images/AlexisLG copy.png",
+          description:
+            "Design support contributing to the visual presentation and user-facing experience of the EPFV platform.",
+        },
+        {
+          name: "Carolina Valdez",
+          role: "Designer",
+          image: "/about_images/food_logo.png",
+          description:
+            "Graphic design support, including identity and visual assets connected to the EPFV platform.",
+        },
+      ],
+    },
+    {
+      title: "Web Developers",
+      members: [
+        {
+          name: "Alejandro Miramontes",
+          role: "Web Developer",
+          image: "/about_images/food_logo.png",
+          description:
+            "Web development support for EPFV site functionality, implementation, and ongoing maintenance.",
+        },
+        {
+          name: "Sreeja Chevula",
+          role: "Web Developer",
+          image: "/about_images/food_logo.png",
+          description:
+            "Web development support for EPFV site functionality, implementation, and ongoing maintenance.",
+        },
+        {
+          name: "Agustin Juarez",
+          role: "Web Developer",
+          image: "/about_images/food_logo.png",
+          description:
+            "Web development support for EPFV site functionality, implementation, and ongoing maintenance.",
+        },
+        {
+          name: "Carlos Gonzalez",
+          role: "Web Developer",
+          image: "/about_images/food_logo.png",
+          description:
+            "Web development support for EPFV site functionality, implementation, and ongoing maintenance.",
+        },
+      ],
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -169,60 +264,34 @@ export default function About() {
                   </div>
                 </article>
 
-                <article className={styles.teamCard}>
-                  <div className={styles.cardImageWrapper}>
-                    <Image
-                      src="/about_images/marcos.jpg"
-                      alt="Marcos E. Soto"
-                      width={200}
-                      height={200}
-                      className={styles.cardImage}
-                    />
-                  </div>
-                  <div className={styles.cardText}>
-                    <h4>Marcos E. Soto<br/><span>Web Designer, Graphic Designer</span></h4>
-                    <p>
-                      I am a current student attending the University of Texas at El Paso and I am majoring in Graphic Design and minoring in Painting. I have always had a fascination for the arts in film posters and game design.
-                    </p>
-                  </div>
-                </article>
-
-                <article className={styles.teamCard}>
-                  <div className={styles.cardImageWrapper}>
-                    <Image
-                      src="/about_images/food_logo.png"
-                      alt="Carolina Valdez"
-                      width={200}
-                      height={200}
-                      className={styles.cardImage}
-                    />
-                  </div>
-                  <div className={styles.cardText}>
-                    <h4>Carolina Valdez<br/><span>Graphic Designer (for EPFV "Logo")</span></h4>
-                    <p>
-                      This logo was created by Carrolina Valdez, a UTEP student sharpening her graphic skills at UTEP’s InSPIRE. The logo takes its inspiration from Chicano artist Rolando Briseño’s Tablescapes.
-                    </p>
-                  </div>
-                </article>
-
-                <article className={styles.teamCard}>
-                  <div className={styles.cardImageWrapper}>
-                    <Image
-                      src="/about_images/marcos.jpg"
-                      alt="Carlos Gonzalez"
-                      width={200}
-                      height={200}
-                      className={styles.cardImage}
-                    />
-                  </div>
-                  <div className={styles.cardText}>
-                    <h4>Carlos Gonzalez<br/><span>Web Developer</span></h4>
-                    <p>
-                      I am a rising-senior undergraduate student majoring in Computer Science at the Univeristy of Texas at El Paso. I have always been captivated and passionate about software development, and working on this project has allowed for me to grow my development skills while expanding my culinary education along the way
-                    </p>
-                  </div>
-                </article>
                 </div>
+
+                <section className={styles.technicalTeamSection}>
+                  {technicalTeamSections.map((section) => (
+                    <div key={section.title} className={styles.teamSubsection}>
+                      <h4 className={styles.teamSubheading}>{section.title}</h4>
+                      <div className={styles.teamGrid}>
+                        {section.members.map((member) => (
+                          <article key={member.name} className={styles.teamCard}>
+                            <div className={styles.cardImageWrapper}>
+                              <Image
+                                src={member.image}
+                                alt={member.name}
+                                width={200}
+                                height={200}
+                                className={styles.cardImage}
+                              />
+                            </div>
+                            <div className={styles.cardText}>
+                              <h4>{member.name}<br/><span>{member.role}</span></h4>
+                              <p>{member.description}</p>
+                            </div>
+                          </article>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </section>
 
                 <section className={styles.specialThanksSection}>
                   <strong>Special Thanks</strong>
